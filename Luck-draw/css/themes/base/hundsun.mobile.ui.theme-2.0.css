@@ -1,0 +1,1312 @@
+
+body{ background:#5d4732; color:#333;}
+
+.m-bg-1{ background: -webkit-gradient(linear, 0 0, 0 100%, from(wheat), to(white));}
+.m-bg-2{ background:url(images/m-bg-2.png); background-size:8px 8px}
+.m-bg-3,.m-bg-5{ background:url(images/m-bg-3.jpg); background-size:100% 100%}
+.m-bg-4{ background:#fff}
+
+/**.m-bg-1{
+background-image:url(images/beijin3.gif);
+background-size:320px 640px;
+ width:320px;
+ height:640px;
+ margin-top:2px;
+}**/
+
+.m-font-heavy{ font-weight:bold;}
+.m-font-light{  color:#c0a28b; }
+
+[m-role='UITableView'][m-style='grouped'] .m-font-light{  color:#666; }
+
+
+
+
+.m-color-red{ color:#ff0000}
+
+
+.m-color-1{ color:#f39c01}
+.m-color-2{ color:#FF8888}
+.m-color-3{ color:#f5a732}
+.m-color-4{ color:#676767}
+.m-color-5{ color:#fff}
+.m-color-6{ color:#999}
+.m-color-7{ color:#5a2f15}
+.m-color-8{ color:#42bf42}
+
+
+[m-role='UITableView'][m-style='grouped'] .m-color-1{ color:#34404d}
+[m-role='UITableView'][m-style='grouped'] .m-color-2{ color:#b10c0d}
+[m-role='UITableView'][m-style='grouped'] .m-color-3{ color:#11af0a}
+
+
+
+
+
+
+
+
+
+
+.m-color-out{ color:#fff;text-shadow: 0 1px 0px rgba(0,0,0,0.5);}/*----------out用于没有放到容器里的文字，和背景融合-----------*/
+
+
+a,a:hover{
+	color:#f48a0f;
+	text-decoration:none
+}
+/*----------UIPageControl-----------*/
+[m-role='UIPageControl']{
+	background-color:transparent;
+}
+[m-role='UIPageControl']>ul,[m-role='UIPageControl']>ul>li>div{
+	-webkit-border-radius: 5px;
+}
+[m-role='UIPageControl']>dl{
+}
+[m-role='UIPageControl']>dl dd{
+	background-color:rgba(0,0,0,0.5);
+	-webkit-border-radius: 5px;
+	color:#fff;
+	width:8px;
+	height:8px;
+}
+[m-role='UIPageControl']>dl dd.UIPageControlIndicatorOn{
+	background-color:rgba(255,255,255,0.8);
+	color:#333;
+}
+[m-role='UIPageControl'][m-indicator='number']>dl dd{
+}
+[m-role='UIPageControl'][m-indicator='text']>dl dd{
+}
+
+
+/*----------UIPercentBar-----------*/
+[m-role='UIPercentBar']{
+	background-color:transparent;
+	-webkit-box-shadow: 0 0px 5px rgba(0,0,0,0.2) inset;
+	-webkit-border-radius: 3px;
+}
+.UIPercentBarCon{
+	background-color:#fff;
+	-webkit-border-radius: 3px;
+}
+[m-role='UIPercentBar'][m-style='style-1'] .UIPercentBarCon{
+	background:#657892;
+	color:#fff;
+}
+[m-role='UIPercentBar'][m-style='style-2'] .UIPercentBarCon{
+	background:#b10c0d;
+	color:#fff;
+}
+[m-role='UIPercentBar'][m-style='style-3'] .UIPercentBarCon{
+	background:#11af0a;
+	color:#fff;
+}
+[m-role='UIPercentBar'][m-style='style-4'] .UIPercentBarCon{
+	background:#2362de;
+	color:#fff;
+}
+
+[m-role='UIPercentBar']>span{
+	text-shadow:  0 1px 1px rgba(255,255,255,0.5);
+}
+.UIPercentBarCon>span{
+	text-shadow:  0 1px 1px rgba(0,0,0,0.5);
+}
+
+
+/*----------UIPopup-----------*/
+[m-role='UIPopup']{
+	background-color:#000;
+	color:#fff;
+	-webkit-border-radius: 5px;
+}
+
+/*----------UIComfirm-----------*/
+[m-role='UIComfirm']{
+	background-color:rgba(0,0,0,0.5);
+}
+.UIComfirmContent{
+	background-color:#fff;
+	color:#333;
+	-webkit-border-radius: 5px;
+}
+.UIComfirmContentHtml{
+}
+
+/*----------UIAlert-----------*/
+[m-role='UIAlert']{
+	background-color:rgba(0,0,0,0.5);
+}
+.UIAlertContent{
+	background-color:#000;
+	color:#fff;
+	-webkit-border-radius: 5px;
+}
+.UIAlertContentHtml{
+}
+
+/*----------UIHr-----------*/
+[m-role='hr']{
+	border-top:1px solid #e0e0e0;
+	border-bottom:1px solid #fff;
+}
+
+[m-role='hr'] em{
+	background:#dae2f1;
+}
+
+/*----------UISplit-----------*/
+[m-role='split']{
+}
+/*----------UILine-----------*/
+[m-role='line']{
+	background:#5b2f16
+}
+
+
+/*----------UILoading-----------*/
+
+[m-role='UILoading']{
+	background-color:rgba(0,0,0,0);
+	
+}
+
+.UILoadingContent{
+	color: #fff;
+	background-color: #000;
+	-webkit-border-radius: 5px;
+	background: #000;
+	background-size:32px 32px;
+	padding-top:10px;
+	 display:block;
+	 height:70px;
+}
+.UILoadingContent canvas{
+	display:block;
+	margin:10px auto
+
+}
+
+[m-role='UILoading'].UILoadingMin{
+	background:-webkit-gradient(linear,0% 0%, 0% 100%, from(rgba(149,164,174,0.8)),to(rgba(180,189,196,0.8)));
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	color: #fff;
+	text-shadow:  0 1px 1px rgba(0,0,0,0.5);
+	-webkit-border-radius: 5px;
+}
+[m-role='UILoading'].UILoadingMin .UILoadingContent{
+	background:url(images/UILoading.gif) no-repeat;
+	background-size:16px 16px;
+	display: -webkit-box;
+}
+
+[m-role='UILoading'].UILoadingMin .UILoadingContent canvas{
+	display: none
+}
+
+
+
+
+/*----------UIWindow-----------*/
+
+[m-role='UIWindow']{
+	background-color:rgba(0,0,0,0.5);
+	
+}
+
+.UIWindowContent{
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	overflow:hidden;
+}
+
+
+
+
+/*----------UISelectField-----------*/
+
+
+[m-role='UISelectField']{ 
+	-webkit-border-radius: 0px;
+	border:1px solid rgba(0,0,0,0)
+}
+
+[m-role='UISelectField'] select{ 
+}
+[m-role='UISelectField'] [m-icon='arrowdown']{
+}
+/*----------UISelectMenu-----------*/
+
+
+[m-role='UISelectMenu']{ 
+	border:1px solid rgba(0,0,0,0);
+
+}
+[m-role='UISelectMenu'] [m-icon='arrowdown']{
+}
+
+.UISelectMenuView{
+}
+.UISelectMenuView ul{
+	padding:5px 0
+}
+.UISelectMenuView ul li{
+	color:#fff;
+	border-bottom:1px solid rgba(0,0,0,0);
+}
+
+.UISelectMenuView ul li:last-child{
+}
+
+.UISelectMenuView ul li[m-selected='yes']{
+	background-color:rgba(255,255,255,0.3);
+	margin:0 5px;
+	-webkit-border-radius: 3px;
+}
+.UISelectMenuView ul li.UISelectionStyle{
+	color:#000;
+	background-color:rgba(255,255,255,0.5)!important;
+}
+
+
+.UISelectMenuView .UIScrollbarH > div,
+.UISelectMenuView .UIScrollbarV > div {
+	-webkit-border-radius: 10px;
+	background:rgba(255,255,255,0.3)
+}
+
+/*----------UIBubble-----------*/
+
+
+
+
+
+[m-role='UIBubble']{
+	background-color:#000;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.5) 
+}
+.UIBubbleContent{
+}
+[m-role='UIBubble']>[m-icon='arrowbubble']{
+	height:8px;
+	top:-8px;
+	overflow:hidden;
+	background-color:transparent;
+	background-position:-120px -34px;
+}
+[m-role='UIBubble'].UIBubbleDown>[m-icon='arrowbubble']{
+	background-position:-120px -48px;
+	bottom:-8px;
+}
+
+
+
+/*----------UITextField-----------*/
+
+
+[m-role='UITextField']{ 
+	border:1px solid  rgba(0,0,0,0);
+	background-color:transparent;
+	-webkit-border-radius: 0px;
+}
+[m-role='UITextField'] input{
+}
+
+.UITextFieldClear{
+	background-color:transparent;
+}
+
+
+[m-role='UITextField'][m-type='search']{ 
+}
+
+[m-role='UITextField'] [m-icon='search']{
+}
+
+[m-role='UITextField'][m-type='verify']{
+	min-width: 40px;
+}
+/*----------UITextarea-----------*/
+
+
+[m-role='UITextarea']{ 
+	border:1px solid  rgba(0,0,0,0); 
+	background-color:transparent;
+	-webkit-border-radius: 0px;
+}
+[m-role='UITextarea'] textarea{
+	width: 90%
+}
+
+.UITextareaClear{
+	background-color:transparent;
+}
+
+
+[m-role='UITextarea'][m-type='search']{ 
+}
+
+
+
+/*----------UIDateField-----------*/
+
+
+[m-role='UIDateField']{ 
+	border:1px solid  rgba(0,0,0,0); 
+	background-color:transparent;
+}
+[m-role='UIDateField'] input{
+}
+
+.UIDateFieldHandler{
+}
+
+[m-role='UIDateField'] [m-icon='calendar']{
+}
+
+/*----------UICalendarField-----------*/
+
+
+
+[m-role='UICalendarField'][m-display='inline'] .ios .dw-cal-day-m{
+	top: auto;
+	left: 1px;
+	bottom: 1px;
+	border: 0;
+	width:auto;
+	height: 20px;
+	-webkit-border-radius: 0px;
+	background:none;
+	right: -1px;
+	-webkit-box-shadow:none!important;
+	box-shadow:none!important;
+}
+
+[m-role='UICalendarField'][m-display='inline'] .ios .dw-sel .dw-cal-day-m{
+	background:none;
+}
+
+[m-role='UICalendarField'][m-display='inline'] .ios .dw-cal-day-m::before{
+	font-size:12px;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	line-height:10px;
+	content:'提醒';
+	padding-top:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------UITableView-----------*/
+
+[m-role='UITableView'][m-style='grouped']{
+	border-bottom:0
+}
+
+[m-role='UITableView'][m-style='grouped']>dl>dd{
+	padding: 0!important;
+}
+
+[m-role='UITableView']>dl>dd.m-show{
+}
+
+[m-role='UITableView'].UITableViewHideItems>dl>dd{
+}
+[m-role='UITableView']>.UITableViewNoData{
+	color:#ccc;
+}
+.UITableViewSectionHeader,
+[m-role='UITableView']>[m-role='header']{ 
+	background:rgba(47,24,11,0.5);
+	color:#c0a28b;
+	border-top: 1px solid rgba(0,0,0,0.5);
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+[m-role='UITableView']>[m-role='header']:first-child {
+	border-top: 1px solid rgba(0,0,0,0.5);
+}
+.UITableViewSectionHeader{
+	border-top: 0
+}
+[m-role='UITableView']>dl>dd{ 
+	border-bottom: 1px solid #000;
+	background-color:transparent;
+}
+
+
+
+
+
+[m-role='UIBubble'] [m-role='UITableView'][m-style='grouped']>dl{
+	border:1px solid #000
+}
+
+[m-role='UITableView'][m-style='style-2']>dl>dd{ 
+	border-bottom: 1px solid rgba(38,22,10,1);
+	background-color:transparent
+}
+[m-role='UITableView'][m-style='style-2']>dl{ 
+	-webkit-box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+}
+
+[m-role='UITableView'][m-style='style-1']>dl>dd{
+	text-shadow:0px 1px 0px rgba(255,255,255,0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+	-webkit-border-radius:8px;
+	margin:0 10px  15px 10px;
+	background:-webkit-gradient(linear,0% 0%, 0% 100%, from(#cbecff),to(#94bce6));
+	min-height:46px;
+	border:1px solid #83b4e5;
+	text-align:left
+}
+
+[m-role='UITableView'][m-style='style-1']{
+	text-align:center
+}
+[m-role='UITableView'][m-style='style-1']>[m-role='header']{
+	-webkit-border-radius:4px;
+	margin:10px auto;
+	background:rgba(0,0,0,0.2);
+	padding:2px 6px;
+	display:inline-block;
+	font-size:12px;
+	text-shadow:none;
+	-webkit-box-shadow:none;
+	border:none;
+	color:#fff;
+	font-weight:normal
+}
+
+[m-role='UITableView'][m-style='style-4']>dl>dd{
+	text-shadow:0px 1px 0px rgba(255,255,255,0.4);
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+	-webkit-border-radius:5px;
+	margin:0 10px  15px 10px;
+	background:-webkit-gradient(linear,0% 0%, 0% 100%, from(#fff9e2),to(#ffebbb));
+	min-height:46px;
+	border:0px solid #c1ab78;
+	text-align:left;
+	color:#000;
+}
+
+[m-role='UITableView'][m-style='style-4']{
+	text-align:center
+}
+[m-role='UITableView'][m-style='style-4']>[m-role='header']{
+	-webkit-border-radius:4px;
+	margin:10px auto;
+	background:rgba(0,0,0,0.2);
+	padding:2px 6px;
+	display:inline-block;
+	font-size:12px;
+	text-shadow:none;
+	-webkit-box-shadow:none;
+	border:none;
+	color:#fff;
+	font-weight:normal
+}
+
+
+[m-role='UITableView'][m-style='style-3']>dl>dd{
+	text-shadow:0px 1px 0px rgba(255,255,255,0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+	-webkit-border-radius:8px;
+	margin:0 10px  15px 10px;
+	background:-webkit-gradient(linear,0% 0%, 0% 100%, from(#beee52),to(#a5cd40));
+	min-height:46px;
+	border:1px solid #a3d267;
+	text-align:left
+}
+
+[m-role='UITableView'][m-style='style-3']{
+	text-align:center
+}
+[m-role='UITableView'][m-style='style-3']>[m-role='header']{
+	-webkit-border-radius:4px;
+	margin:10px auto;
+	background:rgba(0,0,0,0.2);
+	padding:2px 6px;
+	display:inline-block;
+	font-size:12px;
+	text-shadow:none;
+	-webkit-box-shadow:none;
+	border:none;
+	color:#fff;
+	font-weight:normal
+}
+
+
+
+[m-role='UISegment']>[m-role='header'],
+[m-role='UITableView'][m-style='grouped']>[m-role='header']{
+	background:none;
+	color:#272222;
+	text-shadow: 0 1px 0px rgba(0,0,0,0.5);
+	box-shadow:none;
+	border:1px solid rgba(0,0,0,0);
+	text-align:left
+}
+[m-role='UISegment']>[m-role='header']{ text-align:left;}
+[m-role='UITableView'][m-style='grouped']>[m-role='footer']{
+	color:#fff;
+	text-shadow: 0 1px 0px rgba(0,0,0,0.5);
+}
+
+[m-role='UITableView'][m-style='grouped']>dl{
+	-webkit-border-radius: 8px;
+	border: 0px solid #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+	color:#676767;
+	padding:0px;
+	font-size:14px;
+	background:#fff;
+}
+[m-role='UITableView'][m-style='grouped']>dl>:last-child{ 
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	border-bottom:0;
+
+}
+[m-role='UITableView'][m-style='grouped']>dl>:first-child{ 
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-top-left-radius: 0px;
+}
+
+[m-role='UITableView'][m-style='grouped']>dl>dd{
+	border-bottom:1px solid #ccc;
+}
+
+[m-role='UITableView']>dl>dd[m-checked='yes']>.UITableViewCheckWrap{
+	background-color:rgba(220,230,240,0.5);
+}
+[m-role='UITableView']>dl>dd>.UITableViewCheckWrap>.UITableViewCheck{
+	background-color:transparent;
+}
+[m-role='UITableView']>dl>dd[m-checked='yes']>.UITableViewCheckWrap>.UITableViewCheck{
+	background-color:transparent;
+}
+[m-role='UITableView']>dl>dd.UITableViewCheckState{
+}
+
+/*--------*/
+[m-role='UITableView']>dl>dd>.UITableViewMarkWrap{
+}
+[m-role='UITableView']>dl>dd[m-marked='yes']>.UITableViewMarkWrap{
+	background-color:rgba(232,218,200,0.5);
+}
+[m-role='UITableView']>dl>dd>.UITableViewMarkWrap>.UITableViewMark{
+	background-color:transparent;
+}
+[m-role='UITableView']>dl>dd[m-marked='yes']>.UITableViewMarkWrap>.UITableViewMark{
+	background-color:transparent;
+}
+
+/*--------*/
+[m-role='UITableView']>dl>dd>.UITableViewArrow{
+	background:transparent url(images/ui-arrow.png) no-repeat center;
+	background-size:16px 16px;
+	right:10px;
+}
+/*--------*/
+[m-role='UITableView']>dl>dd>.UITableViewArrowButtonWrap{
+}
+
+[m-role='UITableView']>dl>dd>.UITableViewArrowButtonWrap .UITableViewArrowButton{
+	background-color:transparent;
+}
+[m-role='UITableView']>dl>dd>.UITableViewArrowButtonWrap .UITableViewArrowButton{
+	background-color:transparent;
+}
+
+
+
+/*----------UIGrid-----------*/
+[m-role="UIGrid"]{
+	background:rgba(0,0,0,0.3);
+}
+
+
+
+[m-role="UIGrid"] .UIGridHead{
+	background:-webkit-gradient(linear,0% 0%, 0% 100%, from(#95a4ae),to(#b4bdc4));
+	color:#fff;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+	border-bottom: 1px solid #98a3aa;
+	-webkit-box-shadow: 0px 1px 0px rgba(255,255,255,0.3) inset,0px 0px 6px rgba(0,0,0,0.5);
+	
+}
+
+
+[m-role="UIGrid"] .UIGridFixStartHead,
+[m-role="UIGrid"] .UIGridFixEndHead{
+	background:-webkit-gradient(linear,0% 0%, 0% 100%, from(#8c9eb3),to(#a0afc1));
+	color:#fff;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+	border-bottom: 1px solid #98a3aa;
+	-webkit-box-shadow: 0px 1px 0px rgba(255,255,255,0.3) inset;
+}
+[m-role="UIGrid"] .UIGridFixStartBody,
+[m-role="UIGrid"] .UIGridFixEndBody{
+	-webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+}
+[m-role="UIGrid"] .UIGridFixStartBody td,
+[m-role="UIGrid"] .UIGridFixEndBody td{
+	background:#f1f3f8;
+}
+[m-role="UIGrid"] .UIGridFixStartBody  tr:nth-child(odd) td,
+[m-role="UIGrid"] .UIGridFixEndBody  tr:nth-child(odd) td{
+	background:#e3e9f2;
+}
+
+
+[m-role="UIGrid"] .UIGridBody tbody tr{
+	background:#fff;
+
+}[m-role="UIGrid"] .UIGridBody tbody tr:nth-child(odd){
+	background:#f0f3f8;
+
+}
+.UIGridPlaceholder{ 
+	color:#34404d; 
+	text-shadow:0px 1px 0px rgba(255,255,255,0.5);
+}
+[m-role="UIGrid"] th{
+
+}
+[m-role="UIGrid"] td{
+
+}
+
+
+/*----------UISegment-----------*/
+[m-role="UISegment"]>ul{
+	background:-webkit-gradient(linear, left top, left bottom, from(#f4ebd5), to(#e8dac0));
+	-webkit-border-radius: 8px;
+	-webkit-box-shadow: none;
+	overflow:visible;
+	
+}
+
+[m-role="UISegment"][m-size='min']{
+}
+[m-role="UISegment"][m-size='min'] li{
+}
+
+
+[m-role="UISegment"] li {
+	border-left: 1px solid #969696;
+	color:#5a2f15;text-shadow:0 -1px 0px rgba(255,255,255,0.8);
+}
+[m-role="UISegment"] li:first-child {
+	-webkit-border-bottom-left-radius: 7px;
+	-webkit-border-top-left-radius: 7px;
+}
+[m-role="UISegment"] li:last-child {
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-top-right-radius: 7px;
+}
+[m-role="UISegment"] li[m-active='yes']{
+	background: #E0A77A;
+	text-shadow: 0 -1px 0px rgba(0,0,0,0.3);
+	color: #fff;
+	-webkit-box-shadow: none
+}
+
+[m-role="UISegment"][m-style="style-1"]>ul{
+	-webkit-border-radius: 0px;
+	-webkit-box-shadow:none
+}
+[m-role="UISegment"][m-style="style-1"] li:first-child {
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-top-left-radius: 0px;
+}
+[m-role="UISegment"][m-style="style-1"] li:last-child {
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+}
+
+
+
+[m-role="UIBottomBar"] [m-role="UISegment"] li[m-active='yes'],
+[m-role="UINavigationBar"] [m-role="UISegment"] li[m-active='yes'],
+[m-role="UIToolBar"] [m-role="UISegment"] li[m-active='yes']{
+	background: #E0A77A;
+	text-shadow: 0 -1px 0px rgba(0,0,0,0.3);
+	color: #fff;
+	-webkit-box-shadow: none
+}
+
+
+
+[m-role="UIToolBar"] [m-role="UISegment"],
+[m-role="UIBottomBar"] [m-role="UISegment"],
+[m-role="UINavigationBar"] [m-role="UISegment"]{
+
+}
+
+[m-role="UIToolBar"] [m-role="UISegment"][m-style="style-1"]>ul,
+[m-role="UIBottomBar"] [m-role="UISegment"][m-style="style-1"]>ul,
+[m-role="UINavigationBar"] [m-role="UISegment"][m-style="style-1"]>ul{
+	background:none;
+	-webkit-box-shadow:none;
+	height:44px;
+}
+[m-role="UIToolBar"] [m-role="UISegment"][m-style="style-1"] li,
+[m-role="UIBottomBar"] [m-role="UISegment"][m-style="style-1"] li,
+[m-role="UINavigationBar"] [m-role="UISegment"][m-style="style-1"] li{
+	border-color:#5a6d85;
+	border-left:none;
+	color:#5a2f15;
+	text-shadow: 0 -1px 0px rgba(255,255,255,0.3);
+	-webkit-box-shadow:none;
+}
+[m-role="UIToolBar"] [m-role="UISegment"][m-style="style-1"] li[m-active='yes'],
+[m-role="UIBottomBar"] [m-role="UISegment"][m-style="style-1"] li[m-active='yes'],
+[m-role="UINavigationBar"] [m-role="UISegment"][m-style="style-1"] li[m-active='yes']{
+	background: -webkit-gradient(linear,0 0,0 100% , from(#794200),to(#AA775B));
+	text-shadow: 0 1px 0px rgba(0,0,0,1);
+	color: #fff;
+	-webkit-box-shadow: none;
+}
+
+
+/*----------UILayout-----------*/
+
+
+
+[m-style='key']{ 
+	width:65px; 
+	min-height:34px;
+	background-color: #e4e4e4;
+	color:#321b0f;
+	padding-left:10px!important;
+}
+
+[m-style='value']{
+	border-left:1px solid #e0e0e0; 	
+}
+
+/*----------UIBadge-----------*/
+[m-role='UIBadge']{
+	min-width: 7px;
+	font-size: 14px;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+	text-align: center;
+	color: #fff;
+	padding:0 6px;
+	height: 20px;
+	line-height:20px;
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	border-radius: 22px;
+	border: 0px solid #fff;	
+	background:#f45420;
+	-webkit-box-shadow: 0 0px 1px rgba(0,0,0,0.5), 0 0px 1px rgba(0,0,0,0.5) inset;
+}
+/*----------UIButton-----------*/
+[m-role='UIButton']{
+	-webkit-border-radius:5px;
+	/*text-shadow: 0 -1px 0px rgba(255,255,255,1);*/
+	-webkit-box-shadow: 0 0px 1px rgba(0,0,0,0.4);
+	background:rgba(150,116,92,0.5);
+	color:#fff;
+}
+
+
+
+[m-role='UIButton'][m-state='disabled']{
+	opacity:0.5
+}
+[m-role='UIButton'][m-size='min']{
+	height:30px;
+	-webkit-border-radius:8px;
+	font-weight: normal;
+	font-size:14px;
+}
+
+[m-role='UIButton'][m-style='style-1']{
+	background:#5b2f16;
+	color:#fff;
+}
+[m-role='UIButton'][m-style='style-2']{
+	background:#f5a732;
+	color:#fff;
+}
+[m-role='UIButton'][m-style='style-3']{
+	background:-webkit-gradient(linear,0 0,0 100% , from(#8be286),color-stop(50%,#34cb2d),color-stop(51%,#14c50b),color-stop(91%,#26c51f), to(#11af0a));
+	color:#fff;
+}
+[m-role='UIButton'][m-style='style-4']{
+	background:-webkit-gradient(linear,0 0,0 100% , from(#F0BF87), to(#C27B33));
+	color:#fff;
+	text-shadow:0 1px 0px rgba(0,0,0,0.3);
+	border:1px solid #bd5f00;
+}
+[m-role='UIButton'][m-style='style-5']{
+	background:-webkit-gradient(linear,0 0,0 100% , from(#ffffff), to(#e9e9e9));
+	color:#4b4b4b;
+	text-shadow:0 1px 0px rgba(255,255,255,0.8);
+	border:1px solid #bcbebf;
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+[m-role='UIButton'][m-style='style-6']{
+	background:rgba(204,168,117,0.5);
+	color:#fff;
+	text-shadow:0 1px 0px rgba(255,255,255,0.9);
+}
+[m-role='UIButton'][m-style='style-7']{
+	background:rgba(227,208,183,0.7);
+	color:#fff;
+	text-shadow:0 1px 0px rgba(255,255,255,0.9);
+}
+[m-role='UIButton'][m-style='style-8']{
+	background:-webkit-gradient(linear,0 0,0 100% , from(#debd90), to(#c69f63));
+	color:#fff;
+	text-shadow:0 1px 0px rgba(0,0,0,0.3);
+	border:1px solid #bd9060;
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+	padding:0 20px;
+}
+[m-role='UIButton'][m-style='style-10']{
+	background:#f5a732;
+	color:#fff;	
+	border:1px solid #f5a732;
+	border-radius: 8px;
+	width:80px;
+	font-size:14px;
+	height:30px;
+}
+
+[m-role='UIButton'][m-style='style-11']{
+	background:#fff;
+	color:#5b2f16;	
+	border:1px solid #f5a732;
+	border-radius: 8px;
+	width:80px;
+	font-size:14px;
+	height:30px;
+}
+
+
+
+
+/*----------UIKeyboard-----------*/
+
+
+
+[m-role='UITextField'].UIKeyboardOn{
+	background-color:transparent;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3) inset;
+}
+
+
+
+/*----------UIRadio-----------*/
+
+
+[m-role='UIRadio']{
+	background:url(images/UIIcon.png) no-repeat;
+	background-size:300px 60px;
+	background-color:transparent;
+	background-position: -238px -30px;
+}
+
+[m-role='UIRadio'][m-checked='yes']{
+	background-color:transparent;
+	background-position: -208px -30px;
+}
+
+/*----------UICheckBox-----------*/
+[m-role='UICheckBox'],[m-role='UICheckBox'][m-checked='yes']{background-color:transparent;}
+
+[m-role='UICheckBox']:before{
+	background:url(images/UIIcon.png) no-repeat;
+	background-size:300px 60px;
+	background-color:transparent;
+	background-position:-186px -36px;
+	width:20px;
+	height:20px;
+	display:inline-block;
+	vertical-align:middle;
+	content:"";
+	margin-right:2px;
+}
+
+[m-role='UICheckBox']{
+
+	width: auto;
+	height: auto;
+}
+
+[m-role='UICheckBox'][m-checked='yes']:before{
+	background-color:transparent;
+	background-position: -156px -36px;
+}
+[m-role='UICheckBox'] span{margin-left:10px;}
+
+
+/*----------UINavigationBar-----------*/
+
+[m-role='UINavigationBar'] .UINavigationBarRoom,
+[m-role='UINavigationBar']{
+	background:#C78865;
+}
+[m-role='UINavigationBar'] .UINavigationBarRoom{ 
+	border-bottom:1px solid #AA775B;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+[m-role='UINavigationBar'] .UINavigationBarRoom>[m-role='title']{ 
+	color:#FFF
+}
+[m-role='UINavigationBar'] [m-role='left'] [m-role='UIButton'] {
+	background: url(images/back.png) no-repeat center;
+	text-indent: -9999px;
+	border: none;
+	background-size: 20px 20px;
+}
+
+[m-role='UINavigationBar'] [m-role='right'] [m-role='UIButton'][m-style='submit']{
+	background:#40291c url(images/submit.png) no-repeat center;
+	width: 25px;
+	background-size: 27px 27px;
+	text-indent: -9999px;
+	border:#271003 1px solid;
+	border-radius: 3px;
+}
+
+/*----------UIBottomBar-----------*/
+
+
+[m-role='UIBottomBar'] .UIBottomBarRoom{ 
+	background:-webkit-gradient(linear, left top, left bottom, from(#8da0bb), to(#5a7498));
+}
+[m-role='UIBottomBar'] .UIBottomBarRoom{ 
+	border-top:1px solid #587397
+}
+
+[m-role='UIBottomBar'] .UIBottomBarRoom>[m-role='title']{ 
+	color:#fff;text-shadow:0 -1px 0px rgba(0,0,0,0.5);
+}
+
+/*----------UIToolBar-----------*/
+
+
+[m-role='UIToolBar'],
+[m-role='UIToolBar'] .UIToolBarRoom{ 
+	background:-webkit-gradient(linear, left top, left bottom, from(#f4ebd5), to(#e8dac0));
+}
+[m-role='UIToolBar'] .UIToolBarRoom{ 
+	border-bottom:1px solid #AA775B;
+}
+
+
+[m-role='UIToolBar']  [m-role='UICalendarField'],
+[m-role='UIToolBar']  [m-role='UISelectField'],
+[m-role='UIToolBar']  [m-role='UIDateField'],
+[m-role='UIToolBar']  [m-role='UITextField']{ 
+	border:1px solid #8b9cae;
+	-webkit-border-radius: 18px;
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.3) inset,0 1px 0 rgba(255,255,255,0.2);
+	background:#fff;
+}
+
+
+/*----------UITip-----------*/
+[m-role="UITip"]{
+	background-color:#F99;
+	color:#900;
+}
+/*----------UISearchBar-----------*/
+
+[m-role='UISearchBar'],
+[m-role='UISearchBar'] .UISearchBarRoom{ 
+	background:transparent;
+	height: 73px;
+}
+[m-role='UISearchBar'] .UISearchBarRoom{ 
+	border-bottom:1px solid #5a2f15;
+}
+
+.UISearchBarMask{
+	background-color:rgba(0,0,0,0.8);
+	
+}
+[m-result]{
+	background-color:#fff;
+}
+.UIFilterKeyColor{
+	color:#C00;
+}
+
+
+[m-role='UISearchBar']  [m-role='UICalendarField'],
+[m-role='UISearchBar']  [m-role='UISelectField'],
+[m-role='UISearchBar']  [m-role='UIDateField'],
+[m-role='UISearchBar']  [m-role='UITextField']{ 
+	border:1px solid #2e1503;
+	-webkit-border-radius: 8px;
+	background:#fff;
+	height: 38px;
+}
+[m-role='UITextField'] [m-icon='search'] {
+position: absolute;
+top: 4px;
+left: 0;
+}
+
+/*----------UISwitch-----------*/
+
+[m-role='UISwitch']{
+	-webkit-border-radius: 15px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#f4ebd5), to(#e8dac0));
+	-webkit-box-shadow:0 0px 1px rgba(0,0,0,0.8) inset ,0 1px 3px rgba(0,0,0,0.3) inset;
+	overflow:hidden;
+	height:29px;
+}
+
+
+.UISwitchOn{
+	-webkit-border-radius: 15px;
+	background:#E0A77A;
+	-webkit-box-shadow:0 0px 1px rgba(0,0,0,0.8) inset ,0 1px 3px rgba(0,0,0,0.3) inset;
+}
+
+.UISwitchOn span{
+	color:#fff;
+	text-shadow: 0 -1px 0px rgba(0,0,0,0.3);
+	font-weight: bold;
+}
+.UISwitchOff span{
+	color: #7f7f7f;
+	text-shadow: 0 1px 0px rgba(255,255,255,1);
+	font-weight: bold;
+}
+
+
+.UISwitchButton{
+	width:27px;
+	top:1px;
+	left:1px;
+	bottom:1px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#f4ebd5), to(#e8dac0));
+	-webkit-border-radius: 13px;
+	-webkit-box-shadow: 0px 0px 2px rgba(255,255,255,1) inset,0px 0px 1px rgba(0,0,0,1),0px 0px 1px rgba(0,0,0,1),0px 0px 1px rgba(0,0,0,0.5);
+}
+
+
+/*----------UISelectionStyle-----------*/
+
+
+.UISelectionStyle [placeholder]::-webkit-input-placeholder{}
+
+[m-role='UITableView'] .UISelectionStyle:not([m-role='UIButton']){
+	background:rgba(255,255,255,0.2)!important;
+}
+[m-role='UITableView'][m-style='grouped'] .UISelectionStyle:not([m-role='UIButton']){
+	background:#efefef!important;
+}
+[m-role='UITableView']  .UISelectionStyle:not(dd){
+	-webkit-border-radius: 5px;
+}
+
+
+[m-role='UITableView'] .UISelectionStyle:not([m-role='UIButton']),[m-role='UITableView'] .UISelectionStyle:not([m-role='UIButton']) *{
+	text-shadow:none!important
+}
+
+[m-role='UITextField'].UISelectionStyle,
+[m-role='UIDateField'].UISelectionStyle,
+[m-role='UICalendarField'].UISelectionStyle,
+[m-role='UISelectField'].UISelectionStyle{
+	background:#ccc!important;
+	color:#333!important;
+	text-shadow:none!important;
+	-webkit-box-shadow:0 0px 1px rgba(0,0,0,0.5)!important;
+}
+[m-role='UIButton'].UISelectionStyle{
+
+}
+
+
+/*----------UIIcon-----------*/
+[m-icon]{
+	background-color:transparent;
+	background-image:url(images/UIIcon.png);
+	background-size:300px 60px;
+}
+[m-role="UINavigationBar"] [m-icon],
+[m-role="UIBottomBar"] [m-icon],
+.UISelectionStyle [m-icon],
+[m-icon].UISelectionStyle{
+	background-image:url(images/UIIcon-bright.png);
+}
+[m-role='UISelectMenu'] [m-icon='arrowdown']{
+	top:1px;
+}
+
+[m-icon][m-size='min']{
+}
+
+[m-icon][m-size='min']{
+}
+[m-icon='loading']{
+	background:url(images/UILoading.gif) no-repeat;
+	background-size:16px 16px;
+	background-color:transparent;
+	width:16px;
+	height:16px;
+	margin:0 4px -2px 0;
+	
+}
+
+
+
+
+/*----------UIScrollView-----------*/
+
+
+
+
+.UIScrollbarH > div,
+.UIScrollbarV > div {
+	-webkit-border-radius: 10px;
+}
+
+
+
+
+/*----------UIStep-----------*/
+
+[m-role='UIStep']>ul {
+	background:-webkit-gradient(linear, left top, left bottom, from(#e8dac0), to(#e8dac0));
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+}
+[m-role='UIStep']>ul li {
+	text-shadow: 0 -1px 0px rgba(255, 255, 255, 0.4);
+	color:#666666;
+	border-bottom:1px solid #e8dac0;
+}
+[m-role='UIStep']>ul li em {
+	text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.4);
+	color:#eadac3;
+	box-shadow:0 1px 0px rgba(255, 255, 255, 0.3);
+	background:#666666;
+	border-radius:30px;
+}
+ [m-role='UIStep']>ul li:after, [m-role='UIStep']>ul li:before {
+	background:-webkit-gradient(linear, left top, left bottom, from(#e8dac0), to(#e8dac0));
+}
+[m-role='UIStep']>ul li[m-active='yes'] {
+	color:#fff;
+	text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.4);
+	border-bottom:1px solid #E0A77A;
+}
+[m-role='UIStep']>ul li[m-active='yes'] em {
+	background:#fff;
+	color:#f09c00;
+	/*box-shadow:0 -1px 1px rgba(0, 0, 0, 0.5) inset;*/
+}
+[m-role='UIStep']>ul li[m-active='yes'], [m-role='UIStep']>ul li[m-active='yes']:after {
+	background:#E0A77A
+}
+[m-role='UIStep']>ul li:before {
+	background:#E0A77A;
+}
+/*---UICollapsible---*/
+[m-role='UICollapsible'],[m-role='UIDataList']{ padding:0}
+[m-role='UICollapsible']>[m-role='header'],[m-role='UIDataList']>[m-role='header']{
+	background:rgba(215, 189, 156, 0.5);
+	color:#62381e;
+/*	text-shadow: 0 1px 0px rgba(255,255,255,1);*/
+	box-shadow:none;
+	border:1px solid rgba(0,0,0,0);
+	padding:5px 0;
+}
+[m-role='UIDataList']>[m-role='header']{ border:none}
+[m-role='UICollapsible']{border-top:#C78865 solid 1px;}
+[m-role='UICollapsible']>ul>li>[m-role='title']{}
+[m-role='UICollapsible']>ul>li[m-active='yes']>[m-role='title']{ background:transparent;}
+[m-role='UICollapsible']>[m-role='footer']{
+	color:#4c566c;
+	text-shadow: 0 1px 0px rgba(255,255,255,1);
+}
+[m-role='UICollapsible']>ul>li[m-active='yes']>[m-role='title']{
+	
+}
+
+[m-role='UICollapsible']>ul>li>[m-role='title']>.UICollapsibleArrow{
+	background:transparent url(images/ui-arrow.png) no-repeat center;
+	background-size:16px 16px;
+	right:10px;
+}
+[m-role='UICollapsible']>ul>li>[m-role='title']>.UICollapsibleArrow[m-icon="arrowdown"]{background:transparent url(images/ui-arrow-on.png) no-repeat center;background-size:16px 16px;}
+
+[m-role='UICollapsible']>ul{
+	-webkit-border-radius: 0px;
+	border: none;
+/*	-webkit-box-shadow: 0 1px 0px rgba(255,255,255,0.8),0 0px 2px rgba(0,0,0,0.1) inset;*/
+}
+[m-role='UICollapsible']>ul>:last-child{ 
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	border-bottom:0;
+
+}
+[m-role='UICollapsible']>ul>li ,[m-role='UIDataList']>ul>li{ background:none; border-bottom:1px solid #000;}
+[m-role='UICollapsible']>ul>:first-child{ 
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-top-left-radius: 0px;
+}
+
+
+
+[m-role='UICollapsible']>ul>li[m-active='yes']:first-child [m-role='title']{ 
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-top-left-radius: 0px;
+}
+
+[m-role='cell'][m-mode='x-equal']>[m-role='cell'][m-flex='0.3']{-webkit-box-flex:0.3;
+width: 1px;}
+[m-role='cell'][m-mode='x-equal']>[m-role='cell'][m-flex='0.4']{-webkit-box-flex:0.4;
+width: 1px;}
+[m-role='cell'][m-mode='x-equal']>[m-role='cell'][m-flex='0.5']{-webkit-box-flex:0.5;
+width: 1px;}
+[m-role='cell'][m-mode='x-equal']>[m-role='cell'][m-flex='0.6']{-webkit-box-flex:0.6;
+width: 1px;}
+[m-role='cell'][m-mode='x-equal']>[m-role='cell'][m-flex='1.1']{-webkit-box-flex: 1.1;
+width: 1px;}
+[m-role='cell'][m-mode='x-equal']>[m-role='cell'][m-flex='1.2']{-webkit-box-flex: 1.2;
+width: 1px;}
+[m-role='cell'][m-mode='x-equal']>[m-role='cell'][m-flex='1.3']{-webkit-box-flex: 1.3;
+width: 1px;}
+[m-role='cell'][m-mode='x-equal']>[m-role='cell'][m-flex='1.4']{-webkit-box-flex: 1.4;
+width: 1px;}
+[m-role='cell'][m-mode='x-equal']>[m-role='cell'][m-flex='1.5']{-webkit-box-flex: 1.5;
+width: 1px;}
+
+
+[m-role='UICollapsible']>ul>li[m-active='yes']>[m-role='content']{
+	background: #361c0e;
+	border-top:#000 solid 1px;
+}
+
+.UITextFieldClear{top:5px;}
+.UISearchBarResult{background: #C78865;}
+.UISearchBarRight [m-role='UIButton']{padding:4px 20px;}

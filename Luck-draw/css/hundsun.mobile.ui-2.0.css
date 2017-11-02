@@ -1,0 +1,2401 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}body,button,input,select,textarea{ font-family:Arial}h1,h2,h3,h4,h5,h6{font-size:100%;}address,cite,dfn,em,var{font-style:normal;}code,kbd,pre,samp{font-family:courier new,courier,monospace;}small{font-size:12px;}ul,ol{list-style:none;}a{text-decoration:none;}a:hover{text-decoration:underline;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}legend{color:#000;}fieldset,img{border:0;}button,input,select,textarea{font-size:100%;}table{border-collapse:collapse;border-spacing:0;}
+input:focus, textarea:focus, isindex:focus, keygen:focus, select:focus{ outline:none; outline-offset:0}
+
+img{vertical-align: middle;}
+html{-webkit-text-size-adjust:none;}
+
+body{ font-size:14px; background:#fff;-webkit-text-size-adjust:none; cursor:default;}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+.m-hide{ display:none!important}
+.m-show{ display:block!important}
+div{-webkit-touch-callout:none;-webkit-user-select:none;}
+[m-userselect='yes'],
+[m-userselect='yes'] *{-webkit-touch-callout:inherit!important;-webkit-user-select:initial!important;}
+[m-role='page']{ visibility:hidden;opacity:0; overflow:hidden}
+
+.m-font-bold,.m-font-bold input,.m-font-bold select,.m-font-bold button,.m-font-bold textarea{ font-weight:bold!important}
+.m-font-small,.m-font-small input,.m-font-small select,.m-font-small button,.m-font-small textarea{ font-size:12px!important;}
+.m-font-normal,.m-font-normal input,.m-font-normal select,.m-font-normal button,.m-font-normal textarea{ font-size:14px!important;}
+.m-font-big,.m-font-big input,.m-font-big select,.m-font-big button,.m-font-big textarea{ font-size:16px!important;}
+.m-font-max,.m-font-max input,.m-font-max select,.m-font-max button,.m-font-max textarea{ font-size:20px!important;}
+.m-font-xx,.m-font-xx input,.m-font-xx select,.m-font-xx button,.m-font-xx textarea{ font-size:24px!important;}
+
+
+
+
+.m-font-heavy,.m-font-heavy input,.m-font-heavy select,.m-font-heavy button,.m-font-heavy textarea{ font-weight:bold!important;}
+.m-font-light,.m-font-light input,.m-font-light select,.m-font-light button,.m-font-light textarea{ color:#999}
+
+
+.m-color-1{ color:#666}
+.m-color-2{ color:#ee1b24}
+.m-color-3{ color:#009345}
+.m-color-4{ color:#2e3192}
+.m-color-5{ color:#fff}
+.m-color-6{ color:#999}
+.m-color-out{ color:#4c566c}/*----------out用于没有放到容器里的文字，和背景融合-----------*/
+.m-color-red{ color:#900}
+.m-color-green{ color:#063}
+
+/*----------UIPageControl-----------*/
+[m-role='UIPageControl']{
+	overflow:hidden;
+	position:relative;
+	display:-webkit-box;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+}
+[m-role='UIPageControl']>ul{
+	display:-webkit-box;
+	position:relative;
+}
+[m-role='UIPageControl']>ul>li{
+	position:relative;
+	padding:1px 0;
+}
+[m-role='UIPageControl']>ul>li>div{
+	margin:0 10px;
+	min-height:380px;
+	background-color:rgba(0,0,0,0.3)
+}
+[m-role='UIPageControl']>dl{
+	position:absolute;
+	left:0;
+	bottom:0;
+	right:0;
+	height:30px;
+	display:-webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+[m-role='UIPageControl']>dl dd{
+	background-color:rgba(0,0,0,0.8);
+	width:10px;
+	height:10px;
+	color:#fff;
+	margin:0 5px;
+	font-size:12px;
+	line-height:normal;
+	display:-webkit-box;
+	-webkit-box-align: center;
+}
+[m-role='UIPageControl']>dl dd.UIPageControlIndicatorOn{
+	background-color:rgba(255,255,255,0.8);
+	color:#333;
+}
+[m-role='UIPageControl'][m-indicator='number']>dl dd{
+	padding:0 4px;
+	height:21px;
+	width:auto;
+}
+[m-role='UIPageControl'][m-indicator='text']>dl dd{
+	padding:0 4px;
+	height:21px;
+	width:auto;
+}
+
+
+/*----------UIPercentBar-----------*/
+[m-role='UIPercentBar']{
+	line-height:normal;
+	height:20px; 
+	background-color:#ccc;
+	position:relative;
+}
+
+
+.UIPercentBarCon{
+	position:relative;
+	height:100%;
+	width:0;
+	background-color:#fff;
+	overflow:hidden;
+	z-index:2
+}
+[m-role='UIPercentBar']>span,
+.UIPercentBarCon>span{
+	position:absolute;
+	left:30px;
+	top:50%;
+	width:50px;
+	height:20px;
+	margin-top:-10px;
+	display:-webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: end;
+}
+
+.UIPercentBarCon>span{
+	color:#fff;
+}
+
+
+[m-role='UIPercentBar'][m-style='style-1'] .UIPercentBarCon{
+	background-color:#999;
+	color:#fff;
+}
+[m-role='UIPercentBar'][m-style='style-2'] .UIPercentBarCon{
+	background-color:#ee1b24;
+	color:#fff;
+
+
+
+
+}
+[m-role='UIPercentBar'][m-style='style-3'] .UIPercentBarCon{
+	background-color:#009345;
+	color:#fff;
+}
+[m-role='UIPercentBar'][m-style='style-4'] .UIPercentBarCon{
+	background-color:#2e3192;
+	color:#fff;
+}
+
+
+
+/*----------UIPopup-----------*/
+[m-role='UIPopup']{
+	position:fixed;
+	padding:10px;
+	background-color:#000;
+	color:#fff;
+	top:0;
+	left:0;
+	min-width:50px;
+	max-width:300px;
+	text-align:center;
+	opacity:0;
+	z-index:200;
+	font-size:12px;
+	font-weight:bold
+}
+
+/*----------UIComfirm-----------*/
+[m-role='UIComfirm']{
+	background-color:rgba(0,0,0,0.5);
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:150;
+	font-size: 12px;
+	padding-bottom:15px;
+}
+.UIComfirmContent{
+	position:fixed;
+	padding:10px 5px;
+	background-color:#000;
+	color:#fff;
+	top:0;
+	left:0;
+	min-width:180px;
+	max-width:300px;
+	z-index:200;
+	font-size:12px;
+	font-weight:bold
+}
+.UIComfirmContentHtml{
+	font-size:14px;
+	padding:5px 10px 15px 10px;
+}
+
+
+/*----------UIAlert-----------*/
+[m-role='UIAlert']{
+	background-color:rgba(0,0,0,0.5);
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:150;
+	font-size: 12px;
+	padding-bottom:15px;
+}
+.UIAlertContent{
+	position:fixed;
+	padding:10px 5px;
+	background-color:#000;
+	color:#fff;
+	top:0;
+	left:0;
+	min-width:150px;
+	max-width:300px;
+	z-index:200;
+	font-size:12px;
+	font-weight:bold
+}
+.UIAlertContentHtml{
+	font-size:14px;
+	padding:5px 10px 15px 10px;
+}
+
+
+
+/*----------UIHr-----------*/
+[m-role='hr']{
+	height: 0px;
+	text-align:center;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #fff;
+	margin:15px;
+	position:relative;
+	font-size:12px;
+}
+
+[m-role='hr'] em{
+	background:#fff;
+	position:relative;
+	top:-8px;
+}
+
+/*----------UISplit-----------*/
+[m-role='split']{
+	height: 15px;
+	overflow: hidden;
+}
+/*----------UILine-----------*/
+[m-role='line']{
+	height: 1px;
+	line-height:0;
+	overflow: hidden;
+	background-color:#ccc;
+}
+/*----------UILoading-----------*/
+
+[m-role='UILoading']{
+	background-color:rgba(0,0,0,0.5);
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:1500;
+	font-size: 12px;
+	padding-bottom:15px;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+}
+
+.UILoadingContent{
+	height: 18px;
+	width: 100px;
+	color: #fff;
+	font-weight: bold;
+	padding: 60px 10px 10px 10px;
+	background-color: #333;
+	position: absolute;
+	top: 50%;
+	margin: -60px 0 0 -60px;
+	left: 50%;
+	display:-webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+
+.UILoadingContent canvas{
+	display:none
+}
+.UILoadingContentText{
+	text-align:center
+
+}
+
+[m-role='UILoading'].UILoadingMin{
+	position: absolute;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	top: 9px;
+	left: 25%;
+	right: 25%;
+	background-color: rgba(0,0,0,0.8);
+	height: 26px;
+	padding: 0 10px;
+	color: #fff;
+	text-shadow: none;
+}
+[m-role='UILoading'].UILoadingMin .UILoadingContent{
+	width:auto;
+	height:auto;
+	padding:0 0 0 20px;
+	position:relative;
+	margin:0;
+	top:0;
+	left:0;
+	
+
+}
+
+
+
+/*----------UIWindow-----------*/
+
+[m-role='UIWindow']{
+	background-color:rgba(0,0,0,0.5);
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:130;
+	padding-bottom:15px;
+	opacity:0
+}
+
+.UIWindowContent{
+	background-color: #000;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width:200px;
+	height:100px;
+}
+
+
+
+/*----------UISelectField-----------*/
+
+
+[m-role='UISelectField']{ 
+	border-radius: 0px;
+	position:relative;
+	min-width:100px;
+	height:28px;
+	display:block;
+	border:1px solid #fff
+}
+
+[m-role='UISelectField'] select{ 
+	line-height:normal;
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0px;
+	left:0px;
+	font-size:14px;
+	-webkit-appearance: button;
+	border:none;
+	background:none;
+	z-index:2
+}
+[m-role='UISelectField'] [m-icon='arrowdown']{
+	position:absolute;
+	right:0px;
+	top:-1px;
+}
+/*----------UISelectMenu-----------*/
+
+
+[m-role='UISelectMenu']{ 
+	border-radius: 0px;
+	position:relative;
+	display:inline-block;
+	padding:0 34px 0 30px;
+	height:30px;
+	border:1px solid #fff;
+	line-height:30px;
+	vertical-align:middle
+}
+[m-role='UISelectMenu'] [m-icon='arrowdown']{
+	position:absolute;
+	right:0px;
+	top:-1px;
+}
+
+.UISelectMenuView{
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	overflow:hidden
+}
+
+
+.UISelectMenuView ul li{
+	height:18px;
+	padding:8px;
+	color:#fff;
+	text-align:center;
+	border-bottom:1px solid #333;
+	cursor:pointer;
+}
+
+.UISelectMenuView ul li:last-child{
+	border-bottom:none
+}
+
+.UISelectMenuView ul li[m-selected='yes']{
+	background-color:#999
+}
+.UISelectMenuView ul li.UISelectionStyle{
+	color:#000
+}
+.UISelectMenuContent{ display:none}
+/*----------UIBubble-----------*/
+
+
+
+
+
+[m-role='UIBubble']{
+	position:absolute;
+	left:0;
+	top:100px;
+	width:200px;
+	background-color:#666;
+	opacity:0;
+	z-index:131
+}
+.UIBubbleContent{
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	overflow:hidden
+}
+[m-role='UIBubble']>[m-icon='arrowbubble']{
+	position:absolute;
+	left:0;
+	height:16px;
+	margin-left:-15px;
+	top:-16px;
+	background-color:#666;
+}
+[m-role='UIBubble'].UIBubbleDown>[m-icon='arrowbubble']{
+	bottom:-16px;
+	top:auto;
+}
+[m-role='UIBubble'] .UIBubbleContent .UITextFieldAutoComplete{
+	position:absolute;
+	top:5px;
+	bottom:5px;
+	left:5px;
+	right:5px;
+	overflow:hidden;
+	background:#fff;
+}
+[m-role='UIBubble'] .UIBubbleContent .UITextFieldAutoCompleteLoading{
+	text-align:center;
+	padding:10px;
+	position:relative;
+}
+
+/*----------UIKeyboard-----------*/
+
+
+
+[m-role='UITextField'].UIKeyboardOn{
+	background-color:#efefef;
+}
+
+.UIKeyboardView{
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+}
+
+.UIKeyboardView .UIKeyboardKey{
+	position:absolute;
+	left:8px;
+	top:8px;
+	width:220px;
+}
+
+.UIKeyboardView .UIKeyboardKey li{
+	float:left;
+	padding:8px 10px 2px 10px;
+	width:48px;
+	text-align:center;
+	border:1px solid #313131;
+	border-left:none;
+	border-top:1px solid #9398a2;
+	height:26px;
+	font-weight:bold;
+	color:#fff;
+	background:-webkit-gradient(linear, left top, left bottom, from(#6e7582), to(#4d5462));
+	font-size:18px;
+	line-height:normal;
+}
+
+.UIKeyboardView .UIKeyboardKey li.UISelectionStyle{
+	background:-webkit-gradient(linear, left top, left bottom, from(#dedfe2), to(#b4b8bf));
+	color:#4d5462;
+}
+.UIKeyboardView .UIKeyboardKeyCell,
+.UIKeyboardView .UIKeyboardKeySubmit,
+.UIKeyboardView .UIKeyboardKeyCancel,
+.UIKeyboardView .UIKeyboardKeyClear,
+.UIKeyboardView .UIKeyboardKeyBackspace{
+	background:-webkit-gradient(linear, left top, left bottom, from(#dedfe2), to(#b4b8bf));
+	position:absolute;
+	right:8px;
+	top:8px;
+	padding:10px 10px 0 10px;
+	width:52px;
+	text-align:center;
+	height:27px;
+	color:#4d5462;
+	border-bottom:1px solid #959daa
+}
+.UIKeyboardView .UIKeyboardKeyCell{
+	background:#b4b8bf
+}
+.UIKeyboardView .UIKeyboardKeySubmit{
+	color:#fff;
+	background:-webkit-gradient(linear,0 0,0 100% , from(#7ca3f4),color-stop(50%,#3970e0),color-stop(51%,#2260dd),color-stop(91%,#2261dd), to(#2362de));
+	border-bottom:1px solid #0959a7;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+	z-index:2;
+	text-shadow: 0 -1px 0px rgba(0,0,0,0.3);
+}
+
+.UIKeyboardView .UIKeyboardKeySubmit.UISelectionStyle,
+.UIKeyboardView .UIKeyboardKeyCancel.UISelectionStyle,
+.UIKeyboardView .UIKeyboardKeyClear.UISelectionStyle,
+.UIKeyboardView .UIKeyboardKeyBackspace.UISelectionStyle{
+	color:#fff;
+	background:-webkit-gradient(linear, left top, left bottom, from(#6e7582), to(#4d5462));
+	border-bottom:1px solid #4d5462
+}
+
+.UIKeyboardView .UIKeyboardKeyBackspace div{
+	position:absolute;
+	background:red;
+	width:30px;
+	height:30px;
+	margin-left:-15px;
+	margin-top:-15px;
+	left:50%;
+	top:50%;
+	background:url(images/UIKeyback.png) no-repeat;
+	background-position:0 0;
+	background-size:30px 60px
+}
+
+.UIKeyboardView .UIKeyboardKeyBackspace.UISelectionStyle div{
+	background-position:0 -30px;
+}
+
+.UIKeyboardView .UIKeyboardKeyCancel{
+	top:46px;
+}
+.UIKeyboardView .UIKeyboardKeyCell{
+	top:46px;
+}
+.UIKeyboardView .UIKeyboardKeyClear{
+	top:84px;
+
+}
+
+.UIKeyboardView .UIKeyboardKeyBackspace{
+	top:122px;
+}
+
+.UIKeyboardText{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	cursor:pointer;
+	-webkit-box-align: center;
+	display: -webkit-box;
+	padding:0 0 0 5px
+}
+
+
+/*----------UITextField-----------*/
+
+
+[m-role='UITextField']{ 
+	border:1px solid #fff;
+	background-color:#fff;
+	line-height:normal;
+	border-radius: 0px;
+	position:relative;
+	font-size:14px;
+	min-width:100px;
+	padding:0 35px 0 5px;
+	height:28px;
+}
+[m-role='UITextField'] input{
+	background:none;
+	border:none;
+
+	line-height:normal;
+	width:100%;
+	height:100%;
+	white-space:nowrap;
+	display:block;
+}
+
+.UITextFieldClear{
+	position:absolute;
+	background-color:#999;
+	height:100%;
+	top:-1px;
+	right:0px;
+	display:none;
+	z-index:3;
+	cursor:pointer
+}
+
+[m-role='UITextField'][m-type='autocomplete'],
+[m-role='UITextField'][m-type='search']{ 
+	padding-left:30px;
+}
+
+[m-role='UITextField'] [m-icon='search']{
+	position:absolute;
+	top:-1px;
+	left:0
+}
+/*----------UITextarea-----------*/
+
+
+[m-role='UITextarea']{ 
+	border:1px solid #fff;
+	background-color:#fff;
+	line-height:normal;
+	border-radius: 0px;
+	position:relative;
+	font-size:14px;
+	min-width:100px;
+	min-height:48px;
+}
+[m-role='UITextarea'] textarea{
+	background:none;
+	border:none;
+	line-height:normal;
+	position:absolute;
+	top:5px;
+	bottom:5px;
+	right:5px;
+	left:5px;
+}
+
+.UITextareaClear{
+	position:absolute;
+	background-color:#999;
+	bottom:0px;
+	right:0px;
+	display:none;
+	z-index:3;
+	cursor:pointer
+}
+
+.UITextareaMax{
+	position:absolute;
+	bottom:5px;
+	right:30px;
+	display:none;
+	z-index:3;
+	color:#999
+}
+
+
+[m-role='UITextarea'][m-type='search']{ 
+	padding-left:30px;
+}
+
+
+
+/*----------UIDateField-----------*/
+.UIDateField{
+	-webkit-appearance:button;
+	padding:5px;
+	background:none; border:1px solid #efefef
+}
+
+[m-role='UIDateField']{ 
+	border:1px solid #fff;
+	background-color:#fff;
+	line-height:normal;
+	border-radius: 0px;
+	position:relative;
+	font-size:14px;
+	min-width:100px;
+	padding:0 35px 0 5px;
+	height:28px;
+}
+[m-role='UIDateField'] input{
+	background:none;
+	border:none;
+	line-height:normal;
+	width:100%;
+	height:100%;
+	white-space:nowrap;
+	display:block;
+}
+
+.UIDateFieldHandler{
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0px;
+	left:0px;
+	z-index:3;
+	cursor:pointer
+}
+
+[m-role='UIDateField'] [m-icon='calendar']{
+	position:absolute;
+	top:-1px;right:0
+}
+
+/*----------UICalendarField-----------*/
+[m-role='UICalendarField']{ 
+	border:1px solid #fff;
+	background-color:#fff;
+	line-height:normal;
+	border-radius: 0px;
+	position:relative;
+	font-size:14px;
+	min-width:100px;
+	padding:0 35px 0 5px;
+	height:28px;
+}
+[m-role='UICalendarField'] input{
+	background:none;
+	border:none;
+	line-height:normal;
+	width:100%;
+	height:100%;
+	white-space:nowrap;
+	display:block;
+}
+
+
+
+[m-role='UICalendarField'] input{
+	background:none;
+	border:none;
+	line-height:normal;
+	width:100%;
+	height:100%;
+	white-space:nowrap;
+	display:block;
+}
+
+.UICalendarFieldHandler{
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0px;
+	left:0px;
+	z-index:3;
+	cursor:pointer
+}
+[m-role='UICalendarField'][m-display='inline']{
+	border:0;
+	background-color:transparent;
+	font-size:inherit;
+	padding:0;
+	height:auto;
+	-webkit-box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+}
+
+[m-role='UICalendarField'][m-display='inline'] .dw{
+	position:relative;
+	border:none
+}
+[m-role='UICalendarField'][m-display='inline'] .dwi{
+	display:block;
+	margin:0;
+}
+
+[m-role='UICalendarField'][m-display='inline'] .dwwr{
+	background:none
+}
+[m-role='UICalendarField'][m-display='inline'] .dwc{
+	display:block;
+}
+[m-role='UICalendarField'][m-display='inline'] .dw-cal{
+	width:auto
+}
+
+[m-role='UICalendarField'][m-display='inline'] .dw-cal-front{
+	height:300px;
+}
+
+[m-role='UICalendarField'][m-display='inline'] .UICalendarFieldHandler,
+[m-role='UICalendarField'][m-display='inline'] input{
+	display:none
+}
+
+
+
+[m-role='UICalendarField'] [m-icon='calendar']{
+	position:absolute;
+	top:-1px;right:0
+}
+
+.UICalendarFieldToday{
+
+}
+
+
+/*---UICollapsible---*/
+
+[m-role='UICollapsible']{
+	padding:0 10px
+}
+
+[m-role='UICollapsible']>ul {
+position: relative;
+border-radius: 0px;
+margin-bottom: 10px;
+-webkit-box-shadow: 0 0px 1px #333 inset;
+}
+[m-role='UICollapsible']>ul>li{
+border-bottom: 1px solid #ccc;
+position: relative;
+min-height: 44px;
+background-color: #fff;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+
+}
+
+[m-role='UICollapsible']>ul>li>[m-role='title']>.UICollapsibleArrow{
+	position:absolute;
+	background-color:#efefef;
+	width:30px;
+	height:30px;
+	top:50%;
+	margin-top:-15px;
+	right:0px;
+}
+
+[m-role='UICollapsible']>ul>li>[m-role='title']{
+display: -webkit-box;
+-webkit-box-align: center;
+	min-height:44px;
+	position:relative;
+	cursor:pointer;
+	padding-right:30px;
+}
+
+[m-role='UICollapsible']>ul>li>[m-role='content']{
+	display:none
+}
+[m-role='UICollapsible']>ul>li[m-active='yes']>[m-role='title']{
+	background-color:#efefef;
+}
+[m-role='UICollapsible']>ul>li[m-active='yes']>[m-role='content']{
+	display:block;
+	padding:10px;
+}
+[m-role='UICollapsible']>[m-role='header']{
+	font-weight:bold;
+	font-size:16px;
+	padding:0 4px 4px 4px;
+	background-color:transparent;
+	border:none;
+	line-height:normal;
+	display:block;
+}
+[m-role='UICollapsible']>[m-role='footer']{
+	text-align:center;
+	padding:0 20px;
+}
+
+
+/*----------UITableView-----------*/
+[m-role='UITableView']{
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+}
+
+[m-role='UITableView']>dl>dd.m-show{
+	display:-webkit-box!important
+}
+
+[m-role='UITableView'].UITableViewHideItems>dl>dd{
+	display:none
+}
+[m-role='UITableView']>.UITableViewNoData{
+	text-align:center;
+	padding:20px;
+	font-weight:bold;
+	font-size:20px;
+	color:#ccc;
+}
+[m-role='UITableView']>dl>dd>.UITableViewMask{
+	position:fixed;
+	background:rgba(0,0,0,0);
+	z-index:100;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0
+}
+.UITableViewSectionHeader,
+[m-role='UITableView']>[m-role='header']{ 
+	background-color:#efefef;
+	padding:4px 4px 4px 10px;
+	-webkit-box-align: center;
+	display: -webkit-box;
+	font-weight:bold;
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+	line-height:14px;
+}
+.UITableViewSectionHeader{
+	position:fixed;
+	z-index:7;
+	top:0;
+	left:0;
+	right:0;
+	border-top: 1px solid #efefef;
+}
+[m-role='UITableView']>dl>dd{ 
+	border-bottom:1px solid #ccc;
+	position:relative;
+	min-height:44px;
+	background-color:#fff;
+	padding:0px; 
+	display: -webkit-box;	
+	-webkit-box-align:center;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+}
+
+[m-role='UITableView']>dl>dd:last-child{ 
+	border-bottom:0px!important;
+}
+[m-role='UITableView'][m-style='grouped']>dl>dd[m-type='arrow'],
+[m-role='UITableView']>dl>dd[m-type='arrow']{
+	padding-right:30px;
+}
+[m-role='UITableView'][m-style='grouped']>dl>dd[m-type='mark'],
+[m-role='UITableView']>dl>dd[m-type='mark']{
+	padding-right:30px;
+}
+[m-role='UITableView'][m-style='grouped']>dl>dd[m-type='arrowbutton'],
+[m-role='UITableView']>dl>dd[m-type='arrowbutton']{
+	padding-right:40px;
+}
+
+
+[m-role='UITableView']>[m-role='header']:first-child{
+	border-top:none
+}
+
+[m-role='UITableView'][m-style='grouped']>[m-role='header']{
+	font-weight:bold;
+	font-size:16px;
+	padding:0 4px 4px 4px;
+	background-color:transparent;
+	border:none;
+	line-height:normal;
+	display:block;
+}
+[m-role='UITableView'][m-style='grouped']>[m-role='footer']{
+	text-align:center;
+	padding:0 20px;
+}
+
+
+[m-role='UITableView'][m-style='grouped']{ 
+	padding:0 10px;
+}
+[m-role='UITableView'][m-style='grouped']>dl{
+	position:relative;
+	border-radius: 0px;
+	margin-bottom:10px;
+	-webkit-box-shadow: 0 0px 1px #333 inset;
+}
+[m-role='UITableView'][m-style='grouped']>dl>dd{
+	padding:0 5px;
+	min-height:44px;
+}
+[m-role='UITableView'][m-style='grouped']>dl:last-child{ 
+	margin-bottom:0px;
+}
+[m-role='UITableView']>dl>dd>.UITableViewItemDeleteButton{ 
+	width:50px; 
+	height:30px; 
+	overflow:hidden;
+	right:10px;
+	top:50%;
+	margin-top:-15px;
+	position:absolute;
+	z-index:101
+}
+
+[m-role='UITableView']>dl>dd>.UITableViewItemDeleteButton span{ 
+	width:50px; 
+	line-height:14px;
+	height:30px; 
+	right:0;
+	position:absolute;
+	cursor:pointer;
+	margin:0;
+	padding:0;
+}
+
+[m-role='UITableView']>dl>dd>.UITableViewCheckWrap{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	z-index:5;
+	cursor:pointer;
+}
+[m-role='UITableView']>dl>dd.UITableViewChecked>.UITableViewCheckWrap{
+	background-color:rgba(0,0,0,0.1);
+}
+[m-role='UITableView']>dl>dd>.UITableViewCheckWrap>.UITableViewCheck{
+	position:absolute;
+	background-color:#efefef;
+	width:30px;
+	height:30px;
+	top:50%;
+	margin-top:-15px;
+	left:10px;
+}
+[m-role='UITableView']>dl>dd.UITableViewChecked>.UITableViewCheckWrap>.UITableViewCheck{
+	background-color:#ccc
+}
+[m-role='UITableView']>dl>dd.UITableViewCheckState{
+	padding-left:40px;
+}
+
+/*--------*/
+[m-role='UITableView']>dl>dd>.UITableViewMarkWrap{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	z-index:1;
+	cursor:pointer;
+}
+[m-role='UITableView']>dl>dd.UITableViewMarked>.UITableViewMarkWrap{
+	background-color:rgba(0,0,0,0.1);
+}
+[m-role='UITableView']>dl>dd>.UITableViewMarkWrap>.UITableViewMark{
+	position:absolute;
+	background-color:#efefef;
+	width:30px;
+	height:30px;
+	top:50%;
+	margin-top:-15px;
+	right:0px;
+}
+[m-role='UITableView']>dl>dd.UITableViewMarked>.UITableViewMarkWrap>.UITableViewMark{
+	background-color:#ccc
+}
+
+/*--------*/
+[m-role='UITableView']>dl>dd>.UITableViewArrow{
+	position:absolute;
+	background-color:#efefef;
+	width:30px;
+	height:30px;
+	top:50%;
+	margin-top:-15px;
+	right:0px;
+}
+/*--------*/
+[m-role='UITableView']>dl>dd>.UITableViewArrowButtonWrap{
+	position:absolute;
+	right:0;
+	bottom:0;
+	top:0;
+	z-index:1;
+	cursor:pointer;
+	width:50px
+}
+
+[m-role='UITableView']>dl>dd>.UITableViewArrowButtonWrap .UITableViewArrowButton{
+	position:absolute;
+	background-color:#ccc;
+	width:30px;
+	height:30px;
+	top:50%;
+	margin-top:-15px;
+	right:10px;
+}
+/*----------UIGrid-----------*/
+[m-role="UIGrid"]{
+	position:relative;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	overflow:hidden;
+	background:rgba(0,0,0,0.3);
+	height:100px
+}
+[m-role="UIGrid"] table{
+	table-layout:fixed
+}
+[m-role="UIGrid"] .UIGridBody{
+	z-index:1
+}
+
+
+
+[m-role="UIGrid"] .UIGridBody thead{
+	visibility:hidden
+}
+[m-role="UIGrid"] .UIGridHead{
+	position:absolute;
+	background:#666;
+	color:#fff;
+	top:0;
+	left:0;
+	z-index:3;
+}
+[m-role="UIGrid"] .UIGridFixStartHead,
+[m-role="UIGrid"] .UIGridFixStartBody{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+	overflow:hidden
+}
+[m-role="UIGrid"] .UIGridFixEndHead,
+[m-role="UIGrid"] .UIGridFixEndBody{
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:2;
+	overflow:hidden
+	
+}
+[m-role="UIGrid"] .UIGridFixEndHead,
+[m-role="UIGrid"] .UIGridFixStartHead{	
+	z-index:4;
+}
+
+[m-role="UIGrid"] .UIGridFixStartHead,
+[m-role="UIGrid"] .UIGridFixEndHead{
+	background:#000;
+	color:#fff;
+}
+[m-role="UIGrid"] .UIGridFixStartBody td,
+[m-role="UIGrid"] .UIGridFixEndBody td{
+	background:#efefef;
+}
+[m-role="UIGrid"] .UIGridFixStartBody  tr:nth-child(odd) td,
+[m-role="UIGrid"] .UIGridFixEndBody  tr:nth-child(odd) td{
+	background:#ccc;
+}
+
+
+
+[m-role="UIGrid"] .UIGridBody tbody tr{
+	background:#fff;
+
+}[m-role="UIGrid"] .UIGridBody tbody tr:nth-child(odd){
+	background:#efefef;
+
+}
+.UIGridPlaceholder{ 
+	position:absolute; 
+	top:35px;
+	left:20%;
+	right:20%;
+	text-align:center;
+	color:#fff; 
+	font-size:12px;
+	z-index:0;
+}
+[m-role="UIGrid"] th{
+	padding:6px 4px
+}
+[m-role="UIGrid"] td{
+	padding:6px 4px
+}
+/*----------UISegment-----------*/
+[m-role="UISegment"]{
+	margin: 0 10px;
+
+}
+[m-role="UISegment"] ul{
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	height: 40px;
+	background-color:#efefef;
+	overflow: hidden;
+	-webkit-box-shadow: 0 0px 1px #333 inset;
+	min-width:90px;
+	display: -webkit-box;
+}
+
+[m-role="UISegment"][m-size="min"] ul{
+	height:30px;
+}
+
+[m-role='UISegment']>[m-role='header']{
+	font-weight:bold;
+	font-size:16px;
+	padding:0 4px 4px 4px;
+	background-color:transparent;
+	border:none;
+	line-height:normal;
+	display:block;
+}
+[m-role="UISegment"][m-size='min'] ul{
+	height: 30px;
+}
+[m-role="UISegment"][m-size='min'] li{
+	font-size:12px;
+	line-height:14px;
+}
+
+
+[m-role="UISegment"] li {
+	position: relative;
+	font-weight: bold;
+	border-left: 1px solid #ccc;
+	height: 100%;
+	-webkit-box-flex: 1;
+	width: 1px;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	display: -webkit-box;
+	cursor:pointer;
+	font-size:18px;
+}
+[m-role="UISegment"] li:first-child {
+	border-left: none;
+	padding-left:1px;
+}
+[m-role="UISegment"] li[m-active='yes']{
+	border: 0;
+	background: #999;
+	color: #fff;
+	border-left: none;
+	padding-left:1px;
+	z-index:1;
+	left:1px;
+	margin-left:-1px;
+	cursor:default;
+}
+[m-role="UISegment"] li:first-child{
+-webkit-border-bottom-left-radius: 0px;
+-webkit-border-top-left-radius: 0px;
+}
+[m-role="UISegment"] li:last-child{
+-webkit-border-bottom-right-radius: 0px;
+-webkit-border-top-right-radius: 0px;
+}
+
+[m-role="UISegment"][m-style="style-1"]{
+	margin: 0
+}
+
+
+
+/*----------UILayout-----------*/
+
+
+
+[m-style='key']{ 
+	width:70px; 
+	min-height:34px; 
+	font-weight:bold
+}
+[m-style='value']{
+	border-left:1px solid #ccc; 	
+}
+[m-role='cell'],
+[m-role='cell'][m-mode='x-equal']{
+	display: -webkit-box;	
+	-webkit-box-orient:horizontal
+}
+
+
+[m-role='cell'][m-mode='y'],
+[m-role='cell'][m-mode='y-equal']{
+	display: -webkit-box;	
+	-webkit-box-orient:vertical
+}
+
+
+[m-role='cell'][m-talign='center']{
+	text-align:center	
+}
+[m-role='cell'][m-talign='left']{
+	text-align:left	
+}
+[m-role='cell'][m-talign='right']{
+	text-align:right	
+}
+[m-role='cell'][m-valign='bottom'],
+[m-role='cell'][m-mode='x-equal'][m-valign='bottom']{
+	-webkit-box-align:end;
+}
+[m-role='cell'][m-valign='middle'],
+[m-role='cell'][m-mode='x-equal'][m-valign='middle']{
+	-webkit-box-align:center;
+}
+[m-role='cell'][m-align='center'],
+[m-role='cell'][m-mode='x-equal'][m-align='center']{
+	-webkit-box-pack:center;
+}
+[m-role='cell'][m-align='right'],
+[m-role='cell'][m-mode='x-equal'][m-align='right']{
+	-webkit-box-pack:end;
+	text-align:right
+}
+[m-role='cell'][m-align='left'],
+[m-role='cell'][m-mode='x-equal'][m-align='left']{
+	-webkit-box-pack:start;
+	text-align:left
+}
+
+
+[m-role='cell'][m-mode='y'][m-valign='bottom'],
+[m-role='cell'][m-mode='y-equal'][m-valign='bottom']{
+	-webkit-box-pack:end;
+	-webkit-box-align:inherit;
+}
+[m-role='cell'][m-mode='y'][m-valign='middle'],
+[m-role='cell'][m-mode='y-equal'][m-valign='middle']{
+	-webkit-box-pack:center;
+	-webkit-box-align:inherit;
+}
+[m-role='cell'][m-mode='y'][m-align='center'],
+[m-role='cell'][m-mode='y-equal'][m-align='center']{
+	-webkit-box-align:center;
+	-webkit-box-pack:inherit;
+}
+[m-role='cell'][m-mode='y'][m-align='right'],
+[m-role='cell'][m-mode='y-equal'][m-align='right']{
+	-webkit-box-align:end;
+	-webkit-box-pack:inherit;
+	text-align:right
+}
+[m-role='cell'][m-mode='y'][m-align='left'],
+[m-role='cell'][m-mode='y-equal'][m-align='left']{
+	-webkit-box-align:start;
+	-webkit-box-pack:inherit;
+	text-align:left
+}
+
+[m-align='fit'],
+[m-valign='fit']{
+	-webkit-box-align:stretch;
+	-webkit-box-pack:inherit;
+}
+
+
+[m-layout='fit']{
+	-webkit-box-flex:1;
+}
+[m-layout='text']{
+	display:block!important;
+	padding:5px!important;
+	line-height:150%;
+}
+
+[m-layout='text'] p{
+	text-indent:2em;
+	margin:5px 0 5px 5px;
+}
+[m-role='cell'][m-mode='x-equal']>[m-role='cell']{
+	-webkit-box-flex:1;
+	width:1px;
+}
+[m-role='cell'][m-mode='x-equal']>[m-role='cell'][m-flex='2']{
+	-webkit-box-flex:2;
+	width:1px;
+}
+[m-role='cell'][m-mode='x-equal']>[m-role='cell'][m-flex='3']{
+	-webkit-box-flex:3;
+	width:1px;
+}
+[m-role='cell'][m-mode='x-equal']>[m-role='cell'][m-flex='4']{
+	-webkit-box-flex:4;
+	width:1px;
+}
+[m-role='cell'][m-mode='y-equal']>[m-role='cell']{
+	-webkit-box-flex:1;
+	height:1px;
+}
+
+
+
+
+[m-padding='0 0 0 0']{
+	padding:0 0 0 0!important
+}
+[m-padding='1 0 0 0']{
+	padding:5px 0 0 0!important
+}
+[m-padding='0 1 0 0']{
+	padding:0 5px 0 0!important
+}
+[m-padding='0 0 1 0']{
+	padding:0 0 5px 0!important
+}
+[m-padding='0 0 0 1']{
+	padding:0 0 0 5px!important
+}
+[m-padding='1 1 0 0']{
+	padding:5px 5px 0 0!important
+}
+[m-padding='1 0 1 0']{
+	padding:5px 0 5px 0!important
+}
+[m-padding='1 0 0 1']{
+	padding:5px 0 0 5px!important
+}
+[m-padding='0 1 0 1']{
+	padding:0 5px 0 5px!important
+}
+[m-padding='0 1 1 0']{
+	padding:0 5px 5px 0!important
+}
+
+[m-padding='0 0 1 1']{
+	padding:0 0 5px 5px!important
+}
+[m-padding='1 1 1 0']{
+	padding:5px 5px 5px 0!important
+}
+[m-padding='1 1 0 1']{
+	padding:5px 5px 0 5px!important
+}
+[m-padding='1 0 1 1']{
+	padding:5px 0 5px 5px!important
+}
+[m-padding='0 1 1 1']{
+	padding:0 5px 5px 5px!important
+}
+[m-padding='1 1 1 1']{
+	padding:5px!important
+}
+
+
+[m-margin='0 0 0 0']{
+	margin:0 0 0 0!important
+}
+[m-margin='1 0 0 0']{
+	margin:5px 0 0 0!important
+}
+[m-margin='0 1 0 0']{
+	margin:0 5px 0 0!important
+}
+[m-margin='0 0 1 0']{
+	margin:0 0 5px 0!important
+}
+[m-margin='0 0 0 1']{
+	margin:0 0 0 5px!important
+}
+[m-margin='1 1 0 0']{
+	margin:5px 5px 0 0!important
+}
+[m-margin='1 0 1 0']{
+	margin:5px 0 5px 0!important
+}
+[m-margin='1 0 0 1']{
+	margin:5px 0 0 5px!important
+}
+[m-margin='0 1 0 1']{
+	margin:0 5px 0 5px!important
+}
+[m-margin='0 1 1 0']{
+	margin:0 5px 5px 0!important
+}
+
+[m-margin='0 0 1 1']{
+	margin:0 0 5px 5px!important
+}
+[m-margin='1 1 1 0']{
+	margin:5px 5px 5px 0!important
+}
+[m-margin='1 1 0 1']{
+	margin:5px 5px 0 5px!important
+}
+[m-margin='1 0 1 1']{
+	margin:5px 0 5px 5px!important
+}
+[m-margin='0 1 1 1']{
+	margin:0 5px 5px 5px!important
+}
+[m-margin='1 1 1 1']{
+	margin:5px!important
+}
+
+/*----------UIBadge-----------*/
+[m-role='UIBadge']{
+	position:absolute;
+	right:-10px;
+	top:-10px;
+	background-color:#F33;
+	color:#fff;
+	white-space:nowrap;
+	line-height:normal;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	font-size:12px;
+	font-weight:normal;
+	height:20px;
+	padding:0 4px;
+	max-width:30px;
+	cursor:default;
+	z-index:1000;
+}
+[m-role='UITableView'] [m-role='UIBadge']{
+	position:static;
+	right:auto;
+	top:auto;
+}
+
+/*----------UIButton-----------*/
+[m-role='UIButton']{
+	line-height:normal;
+	height:42px; 
+	font-size:20px;
+	font-weight:bold;
+	background-color:#ccc;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	display: -webkit-box;
+	cursor:pointer;
+	padding:0 10px;
+	margin:0 10px;
+	position:relative;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+}
+[m-role='UIButton'][m-padding='0 1 0 0']{
+	padding-right:40px;
+}
+[m-role='UIButton'][m-padding='0 1 0 1']{
+	padding:0 40px;
+}
+[m-role='UIButton'][m-padding='0 0 0 1']{
+	padding-left:40px;
+}
+
+
+[m-role='UIButton'][m-size='min'][m-padding='0 1 0 0']{
+	padding-right:28px;
+}
+[m-role='UIButton'][m-size='min'][m-padding='0 1 0 1']{
+	padding:0 28px;
+}
+[m-role='UIButton'][m-size='min'][m-padding='0 0 0 1']{
+	padding-left:28px;
+}
+
+
+[m-role='UIButton'][m-state='disabled']{
+	opacity:0.5
+}
+[m-role='UIButton'][m-size='min']{
+	font-size:12px;
+	height:30px; 
+	margin:0 5px;
+	line-height:14px;
+}
+[m-role='UIButton'][m-style='style-1']{
+	background-color:#999;
+	color:#fff;
+}
+[m-role='UIButton'][m-style='style-2']{
+	background-color:#ee1b24;
+	color:#fff;
+}
+[m-role='UIButton'][m-style='style-3']{
+	background-color:#009345;
+	color:#fff;
+}
+[m-role='UIButton'][m-style='style-4']{
+	background-color:#2e3192;
+	color:#fff;
+}
+
+[m-role='UIButton']>[m-icon]{
+	position:absolute;
+	left:5px;
+	top:50%;
+	margin-top:-15px
+}
+[m-role='UIButton'][m-size='min']>[m-icon][m-size='min']{
+	position:absolute;
+	left:5px;
+	top:50%;
+	margin-top:-10px;
+	background:none
+}
+
+[m-role='UIButton'][m-has-icon='yes']{
+	padding-left:35px;
+	
+}
+
+
+
+/*----------UIRadio-----------*/
+
+
+[m-role='UIRadio']{
+	background-color:#ccc;
+	position:relative;
+	height:30px;
+	width:30px;
+	display:inline-block;
+}
+
+[m-role='UIRadio'][m-checked='yes']{
+	background-color:#333;
+}
+
+/*----------UICheckBox-----------*/
+
+
+[m-role='UICheckBox']{
+	background-color:#ccc;
+	position:relative;
+	height:30px;
+	width:30px;
+	display:inline-block;
+}
+
+[m-role='UICheckBox'][m-checked='yes']{
+	background-color:#333;
+}
+
+
+/*----------UINavigationBar-----------*/
+
+
+[m-role='UINavigationBar']{
+	background-color:#ccc;
+	position:relative;
+	height:44px;
+}
+
+[m-role='UINavigationBar'] .UINavigationBarRoom{ 
+	height:43px;
+	z-index:48;
+	background-color:#ccc;
+	top:0;
+	left:0;
+	right:0;
+	border-bottom:1px solid #999;
+	display:-webkit-box;
+	position:fixed;
+	z-index:51;
+	-webkit-box-align:center;
+}
+[m-role='UINavigationBar'] .UINavigationBarRoom>[m-role='title']{ 
+	font-size:18px;
+	font-weight:bold;
+	-webkit-box-flex: 1;
+	text-align:center;
+	overflow:hidden;
+	white-space:nowrap
+}
+[m-role='UINavigationBar'] .UINavigationBarRoom>[m-role='left']{ 
+	display:-webkit-box;
+}
+[m-role='UINavigationBar'] .UINavigationBarRoom>[m-role='right']{ 
+	display:-webkit-box;
+	-webkit-box-pack:end;
+	text-align:right
+}
+
+[m-role='UINavigationBar'][m-layout='static'] .UINavigationBarRoom{ 
+	height:42px;
+	position:static;
+}
+
+
+
+/*----------UIBottomBar-----------*/
+
+
+[m-role='UIBottomBar']{
+	position:relative;
+	height:44px;
+}
+
+[m-role='UIBottomBar'] .UIBottomBarRoom{ 
+	height:50px;
+	z-index:48;
+	background-color:#ccc;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	border-top:1px solid #999;
+	display:-webkit-box;
+	position:fixed;
+	z-index:51;
+	-webkit-box-align:center;
+}
+[m-role='UIBottomBar'] .UIBottomBarRoom>[m-role='title']{ 
+	font-size:18px;
+	font-weight:bold;
+	-webkit-box-flex: 1;
+	text-align:center;
+	overflow:hidden;
+	white-space:nowrap
+}
+[m-role='UIBottomBar'] .UIBottomBarRoom>[m-role='left']{ 
+	display:-webkit-box;
+}
+[m-role='UIBottomBar'] .UIBottomBarRoom>[m-role='right']{ 
+	display:-webkit-box;
+	-webkit-box-pack:end;
+	text-align:right
+}
+
+/*----------UIToolBar-----------*/
+
+
+[m-role='UIToolBar']{
+	background-color:#ccc;
+	position:relative;
+	height:44px;
+}
+[m-role='UIToolBar'] .UIToolBarRoom{ 
+	height:43px;
+	z-index:48;
+	background-color:#ccc;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	border-bottom:1px solid #999;
+	display:-webkit-box;
+	-webkit-box-align:center;
+}
+
+
+
+
+[m-role='UIToolBar'] [m-role='UICalendarField'],
+[m-role='UIToolBar'] [m-role='UISelectField'],
+[m-role='UIToolBar'] [m-role='UITextField'],
+[m-role='UIToolBar'] [m-role='UIDateField']{
+	height:28px;
+	margin:0 5px;
+}
+
+[m-role='UIToolBar'] .UIToolBarRoom.UIToolBarLayoutFixed{
+	position:fixed;
+	z-index:51;
+}
+[m-role='UIToolBar'] [m-role='UIButton']{ 
+	margin-top:1px;
+}
+/*----------UITip-----------*/
+[m-role="UITip"]{
+	background-color:#F99;
+	color:#900;
+	font-weight:bold;
+	font-size:12px;
+	height:44px;
+	overflow:hidden;
+	display:-webkit-box;
+	-webkit-box-align:center;
+	padding-left:15px;
+}
+/*----------UISearchBar-----------*/
+
+[m-role='UISearchBar']{
+	background-color:#ccc;
+	position:relative;
+	height:44px;
+}
+[m-role='UISearchBar'] .UISearchBarRoom{ 
+	height:43px;
+	z-index:1;
+	background-color:#ccc;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	z-index:50;
+	border-bottom:1px solid #999;
+	display:-webkit-box;
+	-webkit-box-align:center;
+}
+
+[m-role='UISearchBar'] .UISearchBarRoom.UISearchBarLayoutFixed{
+	position:fixed;
+	z-index:51;
+}
+
+[m-role='UISearchBar'] [m-role='UICalendarField'],[m-role='UISearchBar'] [m-role='UISelectField'],[m-role='UISearchBar'] [m-role='UITextField'],[m-role='UISearchBar'] [m-role='UIDateField']{ 
+	height:28px;
+	margin:0 5px;
+}
+
+[m-role='UISearchBar'] .UISearchBarRight{ 
+	overflow:hidden
+}
+[m-role='UISearchBar'] .UISearchBarRight [m-role='UIButton']{ 
+	width:30px;
+	margin:0 5px
+}
+[m-role='UISearchBar'] [m-role='UIButton']{ 
+	margin-top:1px;
+}
+.UISearchBarMask{
+	position:absolute;
+	top:0px;
+	bottom:-200px;
+	left:0;
+	right:0;
+	background-color:rgba(0,0,0,0.8);
+	z-index:49;
+	
+}
+.UISearchBarResult{
+	position:absolute;
+	top:44px;
+	min-height:1000px;
+	left:0;
+	right:0;
+	display:none;
+	background-color:#fff;
+	z-index:50;
+}
+.UIFilterKeyColor{
+	color:red;
+}
+
+/*----------UISwitch-----------*/
+
+[m-role='UISwitch']{
+	width:78px;
+	height:27px;
+	position:relative;
+	cursor:pointer;
+	font-size:12px;
+	line-height:15px;
+	background-color:#efefef;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+}
+
+
+.UISwitchOn{
+	position:absolute;
+	width:0;
+	left:0;
+	height:100%;
+	background-color:#999;
+	overflow:hidden;
+	z-index:1
+}
+.UISwitchOff{
+	position:absolute;
+	width:100%;
+	right:0;
+	height:100%;
+	overflow:hidden;
+}
+
+.UISwitchOn span{
+	position:absolute;
+	width:46px;
+	height:100%;
+	right:0;
+	display:-webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	padding:0 26px 0 6px;
+	white-space:nowrap;
+	color:#fff;
+}
+.UISwitchOff span{
+	position: absolute;
+	width: 46px;
+	height: 100%;
+	left: 0;
+	white-space: nowrap;
+	display:-webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	padding:0 6px 0 26px;
+	color:#333;
+}
+
+
+.UISwitchButton{
+	position:absolute;
+	width:25px;
+	background-color:#666;
+	left:0;
+	bottom:0;
+	top:0px;
+	z-index:2
+}
+
+
+/*----------UISelectionStyle-----------*/
+
+[m-role='UITableView'] .UISelectionStyle:not([m-role='UIButton']){
+	background:#efefef!important;
+}
+img.UISelectionStyle,
+[m-role='UIGallery'] li .UIGalleryImgWrap.UISelectionStyle{
+	opacity:0.5
+}
+
+[m-role='UIButton'].UISelectionStyle{
+	opacity:0.5
+}
+
+/*[m-role='UIButton'].UISelectionStyle::before{
+	position:absolute; top:0;bottom:0;right:0;left:0;
+	background:rgba(0,0,0,0.3);
+	 content: " ";
+	 -webkit-border-radius: 5px;
+	 
+}
+*/
+/*----------UIIcon-----------*/
+[m-icon]{
+	width:30px;
+	height:30px;
+	display:inline-block;
+	background-repeat:no-repeat;
+	background-color:#efefef;
+}
+[m-icon][m-size='min']{
+	width:20px;
+	height:20px;
+}
+
+[m-icon='search']{
+	background-position:0px -30px
+}
+[m-icon='star']{
+	background-position:-60px -30px
+}
+
+[m-icon='unstar']{
+	background-position:-90px -30px
+}
+
+
+
+[m-role='UITableView'] [m-icon='checkbox']{
+	background-position:-60px 0px
+}
+
+[m-icon='checkbox'],
+[m-role='UITableView'] .UITableViewChecked [m-icon='checkbox']{
+	background-position:-30px 0px
+}
+
+
+
+
+[m-role='UITableView'] [m-icon='mark']{
+	background-position:-300px 0px
+}
+
+[m-icon='mark'],
+[m-role='UITableView'] .UITableViewMarked [m-icon='mark']{
+	background-position:0px 0px
+}
+
+
+[m-icon='clear']{
+	background-position:-30px -30px
+}
+[m-icon='arrow']{
+	background-position:-150px 0px
+}
+ 
+[m-icon='arrowbutton']{
+	background-position:-90px 0px
+}
+
+[m-icon='arrowbubble']{
+	background-position:-150px 0px
+}
+
+[m-icon='arrowgo']{
+	background-position:-90px 0px
+}
+
+[m-icon='arrowgo'].UISelectionStyle{
+	background-position:-120px 0px
+}
+
+
+[m-icon='arrowdown']{
+	background-position:-180px 0px
+}
+[m-icon='arrowup']{
+	background-position:-150px 0px
+}
+
+[m-icon='calendar']{
+	background-position:-210px 0px
+}
+[m-icon='loading']{
+	background:#333
+}
+[m-icon='add']{
+	background-position:-270px 0px
+}
+[m-icon='delete']{
+	background-position:-270px -30px
+}
+[m-icon='wrong']{
+	background-position:-240px 0
+}
+
+[m-icon='right']{
+	background-position:-120px 0
+}
+
+[m-icon='none']{
+	background-position:100px 100px
+}
+
+
+
+
+/*----------UIScrollView-----------*/
+
+
+[m-role='UIScrollView']{
+	position:relative;
+	overflow: hidden;
+}
+
+
+[m-role='UIScrollView'] input, textarea, select {
+-webkit-user-select: auto;
+-moz-user-select: auto;
+-ms-user-select: auto;
+user-select: auto;
+}
+
+
+
+.UIScrollViewScroller{
+	
+	position:relative;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+
+
+
+
+
+/* Styled scrollbars */
+
+.iScrollHorizontalScrollbar {
+	position: absolute;
+	z-index: 9999;
+	height: 6px;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+}
+
+.iScrollHorizontalScrollbar.iScrollBothScrollbars {
+	right: 18px;
+}
+
+.iScrollVerticalScrollbar {
+	position: absolute;
+	z-index: 9999;
+	width: 6px;
+	bottom: 2px;
+	top: 2px;
+	right: 2px;
+}
+
+.iScrollVerticalScrollbar.iScrollBothScrollbars {
+	bottom: 18px;
+}
+
+.iScrollIndicator {
+	position: absolute;
+	background:rgba(0,0,0,0.5);
+	border-radius: 8px;
+	-webkit-box-shadow:0 0 1px rgba(255,255,255,0.8)
+}
+
+.iScrollHorizontalScrollbar .iScrollIndicator {
+	height: 100%;
+}
+
+.iScrollVerticalScrollbar .iScrollIndicator {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.UIScrollbarH {/*-- Horizontal Scrollbar--*/
+
+}
+.UIScrollbarH > div {
+	height:100%;
+}
+
+.UIScrollbarV {/*-- Vertical Scrollbar--*/
+	position:absolute;
+	z-index:100;
+	width:7px;bottom:7px;top:2px;right:1px
+}
+.UIScrollbarV > div {
+	width:100%;
+}
+.UIScrollbarH > div,
+.UIScrollbarV > div {
+	position:absolute;
+	z-index:100;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	background:rgba(0,0,0,0.5)
+}
+/*----------UIStep-----------*/
+
+[m-role='UIStep']>ul {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	background:#efefef;
+	height:44px;
+}
+[m-role='UIStep']>ul li {
+	font-weight:bold;
+	position:relative;
+	height:100%;
+	text-align:center;
+	-webkit-box-flex: 1;
+	-webkit-box-align: center;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	width: 1px;
+	padding-left:10px;
+	border-bottom:1px solid #ccc;
+}
+[m-role='UIStep']>ul li em {
+	margin-right:5px;
+	display:inline-block;
+	padding:2px;
+	min-width:16px;
+	text-align:center;
+	background:#fff;
+}
+ [m-role='UIStep']>ul li:after, [m-role='UIStep']>ul li:before {
+	content: '';
+	position: absolute;
+	width: 22px;
+	height: auto;
+	top: 0px;
+	right: -16px;
+	bottom: 0px;
+	z-index: 2;
+	-webkit-mask: 5px 0 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAABGCAYAAADb7SQ4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBRTE2RUFCRjFDNTBFMzExODU2Q0QyOThGM0QwOTRBNyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4RDNDNjFDNzUwMkMxMUUzQUQ1RUYyQzRGMjc3ODg4OSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4RDNDNjFDNjUwMkMxMUUzQUQ1RUYyQzRGMjc3ODg4OSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkFFMTZFQUJGMUM1MEUzMTE4NTZDRDI5OEYzRDA5NEE3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkFFMTZFQUJGMUM1MEUzMTE4NTZDRDI5OEYzRDA5NEE3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+mNbp9wAAAglJREFUeNrEmT9Iw0AUxl8jFJwEoZOrk9BN3AriJoqCk+iU0c2xxcFFsODo4NjJUhAES6VbV6Fr1q4FwSmLhUjQ9+AFIhp6SS7fffDRIcOvd/f+5VKLvuJPItplTwkoj73KHrE30WBRgz1mr6PBpCt+YtfRYNEeu+cCLDpj31YNrnFUf2c8O2f3kStO1NOth4MlyJ7ZTTRYtKbwBhqcpNlICw0ULNphD9graLDoiH3jAixqsy+qzuMsxewT9hANFoXsFjtAbXU6zaSbbaDBpNCx/gkomLSqPRZJM89CgB6w712ASVOsjYjqLB2bpplHdjXQ8goHG0+stsHJxPqyLM2qAIu2tI/X0eClE2uV4GRivUKkE5lOrB5h9GdiRa04aaXb7BlyxelW2kCD0xNrHbnVafkeuVHTFZhcgQMXZyyXPC30iiWHD9kREvzB3tdf2BlHOhbN0MHls9/QUd357y6lavADu4vux696rjGygATa/GNk5Zpr2oTIkhkqdI6s1ZHeFBi9rNsEX7In6O7U1dSBvi32NYKh/Xii5RA6CEjBP9WggoF/tTgUeKHNfIacuWLd3tLfqPKCO1TyKrEIWPL0zla1Mc3joZbDGDlXT/VcrUFNwHON4AXyTSIsm6tFwLlanE2wn6fF2QJfU4Wf9rLSqVCLK7viwi2uDDjQYIqQ4HeTcdS2fgQYAPqyjW5tq8sCAAAAAElFTkSuQmCC') no-repeat;
+	-webkit-mask-size: 15px 100%;
+	overflow: hidden;
+	background:#fff
+}
+[m-role='UIStep']>ul li[m-active='yes'] {
+	
+}
+[m-role='UIStep']>ul li[m-active='yes'] em {
+	background:#efefef;
+}
+[m-role='UIStep']>ul li[m-active='yes'], [m-role='UIStep']>ul li[m-active='yes']:after {
+	background:#fff;
+}
+[m-role='UIStep']>ul li:before {
+	right: -17px;
+}
+[m-role='UIStep']>ul li:last-child:before,
+[m-role='UIStep']>ul li:last-child:after {
+	display:none
+}
+
+
+
+
+
+/*----------UIGallery-----------*/
+
+
+[m-role='UIGallery'] li {
+	float:left;
+	margin-left:10px;
+	display:inline;
+	text-align:center;
+	position:relative
+}
+[m-role='UIGallery'] li em{
+	display:inline-block;
+	text-align:center;
+	padding:4px 0;
+	white-space:nowrap;
+	overflow:hidden;
+	font-size:12px;
+	position:relative;
+	max-width:100%;
+}
+[m-role='UIGallery'] .UIGalleryImgWrap {
+	margin:auto;
+	width:100px;
+	height:100px;
+	background-size:100px 100px;
+	position:relative;
+}
+[m-role='UIGallery'] li:first-child {
+	margin-left:10px
+}
+[m-role='UIGallery'] li:last-child {
+	margin-right:10px
+}
+[m-role='UIGallery'] .UIGalleryImgWrap>img {
+	width:100%;
+	height:100%;
+	opacity:0
+}
+[m-role='UIGallery']:after {
+	overflow:hidden;
+	content: ' 20';
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+[m-role='UIGallery'][m-style='style-6'] .UIGalleryImgWrap {
+	-webkit-border-radius: 50em;
+	-moz-border-radius: 50em;
+	border-radius: 50em;
+	background-color:#333
+}
+
+/************************************************************************************
+PHOTO
+*************************************************************************************/
+[m-role='UIGallery'][m-style='style-1'] .UIGalleryImgWrap {
+	-webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.8), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.4);
+	-moz-box-shadow: inset 0 0 1px rgba(0,0,0,.8), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.4);
+	box-shadow: inset 0 0 1px rgba(0,0,0,.8), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.4);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+/************************************************************************************
+EMBOSSED
+*************************************************************************************/
+[m-role='UIGallery'][m-style='style-2'] .UIGalleryImgWrap {
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.8), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -7px 0 rgba(0,0,0,.6), inset 0 -9px 0 rgba(255,255,255,.3);
+	-moz-box-shadow: inset 0 0 2px rgba(0,0,0,.8), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -7px 0 rgba(0,0,0,.6), inset 0 -9px 0 rgba(255,255,255,.3);
+	box-shadow: inset 0 0 2px rgba(0,0,0,.8), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -7px 0 rgba(0,0,0,.6), inset 0 -9px 0 rgba(255,255,255,.3);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+
+
+/************************************************************************************
+CUTOUT
+*************************************************************************************/
+
+[m-role='UIGallery'][m-style='style-3'] .UIGalleryImgWrap {
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 4px 5px rgba(0,0,0,.6), inset 0 1px 0 rgba(0,0,0,.6);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 4px 5px rgba(0,0,0,.6), inset 0 1px 0 rgba(0,0,0,.6);
+	box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 4px 5px rgba(0,0,0,.6), inset 0 1px 0 rgba(0,0,0,.6);
+	-webkit-border-radius: 30em;
+	-moz-border-radius: 30em;
+	border-radius: 30em;
+}
+
+/************************************************************************************
+MORPHING + GLOWING
+*************************************************************************************/
+
+[m-role='UIGallery'][m-style='style-4'] .UIGalleryImgWrap {
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+[m-role='UIGallery'][m-style='style-4'] .UIGalleryImgWrap:hover {
+	-webkit-box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
+	-moz-box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
+	box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
+	-webkit-border-radius: 60em;
+	-moz-border-radius: 60em;
+	border-radius: 60em;
+}
+
+/************************************************************************************
+GLOSSY
+*************************************************************************************/
+[m-role='UIGallery'][m-style='style-5'] .UIGalleryImgWrap {
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.5);
+	-moz-box-shadow: inset 0 -1px 0 rgba(0,0,0,.5);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.5);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+[m-role='UIGallery'][m-style='style-5'] .UIGalleryImgWrap:after {
+	position: absolute;
+	content: ' ';
+	width: 100%;
+	height: 50%;
+	top: 0;
+	left: 0;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,.1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.7)), color-stop(100%,rgba(255,255,255,.1)));
+	background: linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,.1) 100%);
+}
+
